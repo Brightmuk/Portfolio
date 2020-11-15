@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar styling */
+
+.navbar{
+    background-image: linear-gradient(to bottom, rgb(0,0,0,0.5) , rgb(0,0,0,0));
+    position: fixed;
+    padding:30px 30px;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding:15px 30px;
+    z-index: 1;
+   background: rgb(0,0,0,0.9);
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;   
+}
+
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: rgb(47, 255, 227);
+
+}
+ 
+.navbar .menu li a{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left:35px;
+    transition: 0.5s
+}
+
+.navbar .menu li a:hover{
+    color:rgb(47, 255, 227);
+}
+.navbar.sticky .menu li a:hover{
+    color:white;
+}
+.menu-btn{
+    color:white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+/* similar content styling */
+section{
+    padding:100px 0
+}
+section .title{
+    position: relative;
+    margin-bottom:30px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+section .title::before{
+    content: '';
+    position: absolute;
+    bottom:0px;
+    width:170px;
+    height:3px;
+    left: 50%;
+    background: #111;
+    transform:translateX(-50%)
+}
+section .title::after{
+    position: absolute;
+    bottom:-7px;
+    color:rgb(47, 255, 227);
+    font-size: 20px;;
+    padding:5px;
+    left: 50%;
+    background: rgb(255, 255, 255);
+    transform:translateX(-50%);
+}
+/* home section styling */
+
+.home{
+    display: flex;
+    height: 100vh;
+    background-image: url(images\abstract-3866503_1280.jpg) no-repeat center;
+    color: white;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin:auto 0 auto 40px
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600px;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 27px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: rgb(47, 255, 227);
+    font-weight: 500px;
+}
+
+
+.home .home-content a{
+    display:inline-block;
+    background:rgb(0,0,0,0,3);
+    color: rgb(47, 255, 227);
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid rgb(47, 255, 227);
+    transition: 0.3s ease;
+    
+}
+.home .home-content a:hover{
+    color:rgb(47, 255, 227);
+    background-color: rgb(0,0,0,0.5);
+}
+
+/* about section styling */
+
+.about, .skills,.projects{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about h2::after{
+    content: 'who i am';
+}
+.about .about-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width:55%
+}
+
+.about .about-content .left img{
+    height: 500px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.about .about-content .right{
+    width:55%;
+}
+.about .about-content .right .text{
+   font-size: 25px;
+   font-weight: 600;
+   color: rgb(49, 49, 49);
+   margin-bottom:10px;
+}
+.about .about-content .right span{
+    color:rgb(47, 255, 227);
+ }
+.about .about-content .right p{
+    text-align: justify;
+    color:rgb(71, 71, 71);
+    font-size: 20px;
+
+ }
+ .about .about-content .right a{
+     display:inline-block;
+     background:rgb(255, 255, 255);
+     color: rgb(2, 224, 195);
+     font-size: 20px;
+     padding: 10px;
+     margin-top: 20px;
+     border-radius:6px;
+     border: 1px solid rgb(47, 255, 227);
+     transition: 0.3s ease;
+ }
+ .about .about-content .right a:hover{
+    background:rgb(0, 0, 0);
+ }
+
+ /* skills section styling */
+ .skills{
+     color:white;
+     background: black;
+ }
+ .skills .skills-content
+ {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .skills .title::before{
+   background: white;
+}
+.skills .title::after{
+    background: black;
+    content:'what i do'
+}
+.skills .skills-content .card{
+    position: relative;
+    width: calc(33% - 20px);
+    min-width: 300px;
+    background: #222;
+    text-align:center;
+    border-radius:5px;
+    padding: 20px 55px;
+    padding-bottom:50px;
+    box-shadow: inset 5px 5px 5px rgba(47, 255, 227.0.5),
+                inset -5px -5px 15px rgba(47, 255, 227.0.5),
+                -5px -5px a5px rgba(0,0,0,0.3);
+}
+
+.skills .skills-content .card .foreground{
+    position: absolute;
+    font-size: 30px;
+    color:white;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    transition:0.5s ease-in-out;
+}
+.skills .skills-content .card:hover .foreground{
+    transform:rotate(-20deg);
+    font-size: 20px;
+    width:120px;
+    height:120px;
+    left:-75px;
+    box-shadow: -5px -5px 2px rgb(47, 255, 227);
+}
+.label-one:before{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  width:20%;
+  height:10px;
+  background-color: rgb(47, 255, 227);
+  color:white;
+  border-bottom-left-radius: 1000px; 
+}
+.card-content a{
+    position: relative;
+    padding:20px 20px;
+    display:block;
+    text-decoration:none;
+    text-transform: uppercase;
+    width:200px;
+}
+
+.label-two:before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:20%;
+    height:10px;
+    background-color: rgb(47, 255, 227);
+    color:white;
+    border-top-right-radius: 1000px; 
+  }
+
+.card-content  .tags{
+    padding:5px;
+    border-radius: 10px;
+    position:relative;
+    font-size: 12px;
+    color:white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+}
+
+.card-content:nth-child(1) svg circle:nth-child(2){
+    stroke:#00ff43;
+
+}
+.card-content:nth-child(2) svg circle:nth-child(2){
+    stroke:#00a1ff;
+
+}
+.card-content:nth-child(3) svg circle:nth-child(2){
+    stroke:#a504aa;
+
+}
+.skills .skills-content .card:hover .text{
+    font-size: 0px;
+   opacity:0;
+}
+.skills .skills-content .card i{
+    margin:10px;
+    font-size:50px;
+    color:rgb(47, 255, 227);
+}
+.skills .skills-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin:10px 0 7px 0;
+    transition:0.5s ease;
+}
+
+/* projects section styling */
+.projects p{
+    font-size: 20px;
+}
+.projects .title::after{
+    content: 'what I\'ve done';
+}
+.projects .projects-content .column{
+    width: 50%;
+   
+}
+
+ /* resposiveness styling */
+
+ @media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 450px;
+        width: 300px;
+    }
+    .skills .skills-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .about .about-content{
+        flex-direction: column;
+    }
+    .skills .skills-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    
+
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .skills .skills-content .card{
+        width: 100%
+    }
+    .skills .skills-content .card .foreground{
+        position: inherit;
+        font-size: 30px;
+        color:white;
+        top:0;
+        left:0;
+        width:100%;
+        height:50%;
+        background: rgb(0,0,0,0.1);
+        margin:20px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow:hidden;
+        border-radius: 5px;
+    }
+    
+    .skills .skills-content .card:hover .foreground{
+        transform:rotate(0deg);
+        font-size: 30px;
+        width:100%;
+        height:50%;
+        left:0;
+        box-shadow: 0 0 0 ;
+    }
+    .skills .skills-content .card:hover .text{
+        font-size: 25px;
+       opacity:1;
+    }
+}
+
+/* .flip-card{
+    width:300px;
+    height:450px;
+    margin:auto;
+    background: white;
+}
+
+.flip-card-back{
+    background-color: white;
+    color: black;
+    transform:rotateY(180deg)
+}
+.flip-card-inner{
+    position:relative;
+    height:100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card-back,.flip-card-front{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+
+}
+.flip-card:hover .flip-card-inner{
+transform: rotateY(180deg)
+} */
+
+
