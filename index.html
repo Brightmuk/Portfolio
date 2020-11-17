@@ -8,21 +8,27 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body >
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">B<span>D</span></a></div>
-            <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+    <div class="header">
+        <nav class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">B<span>D</span></a></div>
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+    </div>
+
     <!-- home section start -->
     <section class="home" id="home" style="background-image: url(images/tree-background.jpg);">
     <div class="max-width">
@@ -76,12 +82,12 @@
                                             a 15.9155 15.9155 0 0 1 0 -31.831"
                                         />
                                         <path class="circle"
-                                          stroke-dasharray="30, 100"
+                                          stroke-dasharray="80, 100"
                                           d="M18 2.0845
                                             a 15.9155 15.9155 0 0 1 0 31.831
                                             a 15.9155 15.9155 0 0 1 0 -31.831"
                                         />
-                                        <text x="18" y="20.35" class="percentage">30%</text>
+                                        <text x="18" y="20.35" class="percentage">80%</text>
                                       </svg>
                                       <div class="technology">HTML/CSS</div>
                                     </div>
@@ -94,12 +100,12 @@
                                             a 15.9155 15.9155 0 0 1 0 -31.831"
                                         />
                                         <path class="circle"
-                                          stroke-dasharray="60, 100"
+                                          stroke-dasharray="70, 100"
                                           d="M18 2.0845
                                             a 15.9155 15.9155 0 0 1 0 31.831
                                             a 15.9155 15.9155 0 0 1 0 -31.831"
                                         />
-                                        <text x="18" y="20.35" class="percentage">60%</text>
+                                        <text x="18" y="20.35" class="percentage">70%</text>
                                       </svg>
                                       <div class="technology">JAVASCRIPT</div>
                                     </div>
@@ -111,12 +117,12 @@
                                               a 15.9155 15.9155 0 0 1 0 -31.831"
                                           />
                                           <path class="circle"
-                                            stroke-dasharray="60, 100"
+                                            stroke-dasharray="70, 100"
                                             d="M18 2.0845
                                               a 15.9155 15.9155 0 0 1 0 31.831
                                               a 15.9155 15.9155 0 0 1 0 -31.831"
                                           />
-                                          <text x="18" y="20.35" class="percentage">60%</text>
+                                          <text x="18" y="20.35" class="percentage">70%</text>
                                         </svg>
                                         <div class="technology">PYTHON</div>
                                       </div>
@@ -175,6 +181,8 @@
                                     <div class="technology">ANGULAR</div>
                                   </div>
                         </div>
+                        <br>
+                        <p>Engineering of both static and dynamic websites is a passion </p>
                         </div>
                     </div>
                     <div class="card">  
@@ -185,8 +193,67 @@
                         <div class="card-content"> 
                         <div class="label-one"></div> 
                         <div class="label-two"></div>  
-                        <span class="tags">Ui/Ux & backend development</span>             
-                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium rerum optio, enim ex dolor numquam rem porro. Facere deserunt impedit assumenda corrupti voluptate quia enim expedita itaque, repellat dolorem dolores.</p>                        
+                        <span class="tags">Ui/Ux & backend development</span>  
+                        <div class="flex-wrapper">
+                            <div class="single-chart">
+                              <svg viewbox="0 0 36 36" class="circular-chart orange">
+                                <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path class="circle"
+                                  stroke-dasharray="60, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="18" y="20.35" class="percentage">60%</text>
+                              </svg>
+                              <div class="technology">DART</div>
+                            </div>
+                            
+                            <div class="single-chart">
+                              <svg viewbox="0 0 36 36" class="circular-chart green">
+                                <path class="circle-bg"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path class="circle"
+                                  stroke-dasharray="20, 100"
+                                  d="M18 2.0845
+                                    a 15.9155 15.9155 0 0 1 0 31.831
+                                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <text x="18" y="20.35" class="percentage">20%</text>
+                              </svg>
+                              <div class="technology">JAVA</div>
+                            </div>
+
+                    </div>   
+                    <div class="flex-wrapper">
+                        <div class="single-chart">
+                          <svg viewbox="0 0 36 36" class="circular-chart orange">
+                            <path class="circle-bg"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <path class="circle"
+                              stroke-dasharray="75, 100"
+                              d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                            />
+                            <text x="18" y="20.35" class="percentage">75%</text>
+                          </svg>
+                          <div class="technology">FLUTTER</div>
+                        </div>
+                        
+
+                             </div>        
+                           <p>Explicit skills in building android and ios applications</p>                        
                         </div>
                     </div>
                     <div class="card">  
@@ -197,8 +264,25 @@
                         <div class="card-content">  
                         <div class="label-one"></div> 
                         <div class="label-two"></div> 
-                        <span class="tags">Visual art development</span>                               
-                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium rerum optio, enim ex dolor numquam rem porro. Facere deserunt impedit assumenda corrupti voluptate quia enim expedita itaque, repellat dolorem dolores.</p>                        
+                        <span class="tags">Visual art development</span> 
+                            <div class="logos-wrapper">
+                                <div class="single-logo">
+                                    <img class="logos" src="images/adobe-photoshop.jpg">   
+                                    <div class="logo-name">Adobe Photoshop</div>
+                                </div>
+                                <br>
+                                <div class="single-logo">
+                                    <img class="logos" src="images/adobe-illustrator.png">
+                                    <div class="logo-name">Adobe Illustrator</div>
+                                </div>
+                                <br>
+                                <div class="single-logo">
+                                    <img class="logos" src="images/corel-draw.png">
+                                    <div class="logo-name">Corel Draw</div>
+                                </div>
+                            </div>                              
+                        
+                           <p>Construction of appealing visual elements</p>                        
                     </div>
                 </div>               
                 </div>
@@ -210,10 +294,10 @@
             <div class="max-width">
                 <h2 class="title">My Projects</h2>
                 <div class="projects-content">
-                    <div class="column left">
+                  
                         <div class="text">My best art pieces</div>
                         <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nulla harum rem alias aliquam atque qui eligendi saepe consectetur exercitationem odio perspiciatis minus quis dolore, totam suscipit rerum accusantium temporibus!</P>
-                    </div>
+                   
                 </div>
             </div>
         </section>
