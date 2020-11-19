@@ -28,20 +28,20 @@ function scrollIndication() {
 
 //slider script
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides1(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides1(n) {
+  showSlides1(slideIndex += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide1(n) {
+  showSlides1(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides1(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = document.getElementsByClassName("mySlides-1");
+  var dots = document.getElementsByClassName("dot-1");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -53,3 +53,31 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+setTimeout(function(){
+  $('.loader-bg').fadeToggle();
+},1500);
+
+//    /* Preloader
+//     * -------------------------------------------------- */
+//    var clPreloader = function() {
+        
+//     $("html").addClass('cl-preload');
+
+//     $WIN.on('load', function() {
+
+//         //force page scroll position to top at page refresh
+//         $('html, body').animate({ scrollTop: 0 }, 'normal');
+
+//         // will first fade out the loading animation 
+//         $("#loader").fadeOut("slow", function() {
+//             // will fade out the whole DIV that covers the website.
+//             $("#preloader").delay(300).fadeOut("slow");
+//         }); 
+        
+//         // for hero content animations 
+//         $("html").removeClass('cl-preload');
+//         $("html").addClass('cl-loaded');
+    
+//     });
+// };
