@@ -58,26 +58,25 @@ setTimeout(function(){
   $('.loader-bg').fadeToggle();
 },1500);
 
-//    /* Preloader
-//     * -------------------------------------------------- */
-//    var clPreloader = function() {
-        
-//     $("html").addClass('cl-preload');
+//contact form submission
+document.querySelector('.contact-form').addEventListener('submit',submitForm);
+function submitForm(e){
+  e.preventDefault();
 
-//     $WIN.on('load', function() {
+  let name = document.querySelector('.name').value;
+  let email = document.querySelector('.email').value;
+  let message = document.querySelector('.message').value;
 
-//         //force page scroll position to top at page refresh
-//         $('html, body').animate({ scrollTop: 0 }, 'normal');
+  document.querySelector('.contact-form').reset();
 
-//         // will first fade out the loading animation 
-//         $("#loader").fadeOut("slow", function() {
-//             // will fade out the whole DIV that covers the website.
-//             $("#preloader").delay(300).fadeOut("slow");
-//         }); 
-        
-//         // for hero content animations 
-//         $("html").removeClass('cl-preload');
-//         $("html").addClass('cl-loaded');
-    
-//     });
-// };
+  Email.send({
+    Host: 'smtp.gmail.com',
+    Username: 'be.rightmuk@gmail.com',
+    Password: 'fsivoogvhdflqelf',
+    To: 'be.rightmuk@gmail.com',
+    From: 'be.rightmuk@gmail.com',
+    Subject: `${name} has sent you a message from your portfolio`,
+    Body: `Name:${name} <br> Email: ${email}<br>  ${message}`,
+
+  }).then((message)=>alert('Mail has been sent'))
+}
