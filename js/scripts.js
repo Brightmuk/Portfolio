@@ -80,3 +80,15 @@ function submitForm(e){
 
   }).then((message)=>alert('Mail has been sent'))
 }
+
+//scroll back to top
+var rootElement = document.documentElement
+var scrollToTopBtn= document.querySelector(".back-top")
+function scrollToTop() {
+  //scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)

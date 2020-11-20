@@ -740,7 +740,7 @@ input[type=text],  textarea {
     cursor: pointer;
     border-radius: 6px;
     transition: all 0.5s ease;
-    margin-left:40%;
+    margin-left:70%;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -749,6 +749,43 @@ input[type=text],  textarea {
     box-shadow:  2px 2px  2px rgb(47, 255, 227);
   }
   
+/* footer styling */
+footer{
+
+   
+    border-top:1px solid rgb(48, 48, 48);
+    background: rgb(20, 20, 20);
+    height:100px;
+    color:rgb(201, 201, 201);
+    padding-bottom:20px;
+    padding-top:15px;
+    font-weight: 100;
+    font-size:13px;
+}
+footer .back-top{
+    padding:10px;
+    float:right;
+   
+    font-size:25px;
+    border: 1px solid rgb(47, 255, 227);
+    transition: all 0.5s ease-in-out;
+}
+footer .back-top:hover{
+   background-color:rgb(47, 255, 227);
+   color:black;
+
+}
+footer .footer-social {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: 5%;
+    left: 4rem;
+  }
 
  /* resposiveness styling */
 
