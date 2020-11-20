@@ -16,6 +16,10 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass('active');
         $('.menu-btn i').toggleClass('active');
     });
+    $('.navbar .menu li a').click(function(){
+      $('.navbar .menu').toggleClass('active');
+        $('.menu-btn i').toggleClass('active');
+    });
 })
 
 //scroll indicator

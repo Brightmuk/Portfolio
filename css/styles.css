@@ -752,8 +752,6 @@ input[type=text],  textarea {
   
 /* footer styling */
 footer{
-
-   
     border-top:1px solid rgb(48, 48, 48);
     background: rgb(20, 20, 20);
     height:100px;
@@ -819,6 +817,7 @@ footer .footer-social {
     }
     .menu-btn i.active:before{
         content: "\f00d";
+        background:rgb(24, 24, 24)
     }
     .navbar .menu{
         position: fixed;
