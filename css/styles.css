@@ -593,105 +593,41 @@ section .title::after{
 .projects .title::after{
     content: 'what I\'ve done';
 }
-.projects .projects-content .column{
-    width: 50%;
+.projects .projects-content .project-container{
+    width:100%;
+    display:flex;
+    margin:20px;
+    flex-direction: row;
+    box-shadow: 2px 2px 8px rgb(0,0,0,0.7)
+   
    
 }
-/* Slideshow container */
-.slideshow-container {
-    width:33%;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev-1, .next-1,.prev-2,.next-2 {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next-1,.next-2 {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev-1:hover, .next-1:hover ,
-  .prev-2:hover,.next-2:hover{
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .projects .text-1,.projects .text-2 {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext-1,.numbertext-2 {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot-1,.dot-2 {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot-1:hover ,.dot-2:hover{
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev-1, .next-1,.text-1,
-    .prev-2, .next-2,.text-2
-     {font-size: 11px}
-  }
+.project-container .project-info{
+    border-top:3px solid rgb(47, 255, 227);
+    color:white;
+    background:rgb(20, 20, 20);
+    left:0;
+    height:100%;
+    width:20%;
+}
+.project-container .desktop-version{
+    width:80%;
+
+}
+.project-container .mobile-version{
+    position:absolute;
+    padding:0;
+    width:300px;
+    margin-left:68%;
+   margin-top:5%;
+   box-shadow: 2px 2px 8px rgb(0,0,0,0.7)
+}
+.project-container .mobile-version img{
+    width:60% 
+ }
+ .project-container .desktop-version img{
+    width:100% 
+ }
 /* contact styling */
 .contact{
     color:white;
@@ -749,7 +685,29 @@ input[type=text],  textarea {
     cursor: pointer;
     box-shadow:  2px 2px  2px rgb(47, 255, 227);
   }
-  
+  .alert{
+    margin:20px;
+    padding:20px;
+    width:100%;
+    text-align:center;
+    background:rgb(47, 255, 227,0.5);
+    animation:alert-fade 3s alternate;
+    
+  }
+  .mail-not-sent{
+      display:none
+  }
+  .mail-sent{
+    display:block
+  }
+  @keyframes alert-fade {
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0
+    }
+  }
 /* footer styling */
 footer{
     border-top:1px solid rgb(48, 48, 48);
