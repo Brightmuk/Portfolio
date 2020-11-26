@@ -31,7 +31,7 @@ function scrollIndication() {
   }
 
 
-
+//show loader on page load
 setTimeout(function(){
   $('.loader-bg').fadeToggle();
 },1500);
@@ -76,5 +76,4 @@ function scrollToTop() {
     behavior: "smooth"
   })
 }
-
 scrollToTopBtn.addEventListener("click", scrollToTop)
