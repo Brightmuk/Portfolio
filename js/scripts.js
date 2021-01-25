@@ -1,5 +1,22 @@
+//parallax effect on scroll
+window.addEventListener("scroll", function() {
+  var limit = document.body.offsetHeight - window.innerHeight;
+  const distance = window.scrollY;
+  document.querySelector(".home").style.transform = `translateY(${distance *
+    1}px)`;
+    document.querySelector(
+      ".home-content-info"
+    ).style.opacity = `${20/distance}`;
+    document.querySelector(
+      ".home-social"
+    ).style.opacity = `${20/distance}`;
+
+});
+
+//sticky nav
 $(document).ready(function(){
     $(window).scroll(function(){
+     
         if(this.scrollY > 20){
             scrollIndication();
             $('.navbar').addClass('sticky');

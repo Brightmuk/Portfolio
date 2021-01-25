@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -8,7 +9,8 @@ html{
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:white
 }
 /* preloader styling */
 .loader-bg{
@@ -29,7 +31,7 @@ html{
 }
 .loader:before,.loader:after{
     content:'';
-    border: 1em solid rgb(47, 255, 227);
+    border: 1em solid rgb(188, 175, 69);
     border-radius:50%;
     width:inherit;
     height:inherit;
@@ -93,27 +95,22 @@ html{
     display: inline-block;   
 }
 
-.navbar .logo a{
-    color: white;
-    font-size: 35px;
-    font-weight: 600;
+.navbar .logo {
+height: 50px;
+width: 50px;
 }
 
-.navbar .logo a span{
-    color: rgb(47, 255, 227);
 
-}
- 
 .navbar .menu li a{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 15px;
-    font-weight: 500;
+    text-transform: uppercase;
     padding-left:35px;
     transition: 0.5s
 }
 
 .navbar .menu li a:hover{
-    color:rgb(47, 255, 227);
+    color:rgb(188, 175, 69);
 }
 .navbar.sticky .menu li a:hover{
     color:white;
@@ -134,7 +131,7 @@ html{
   .progress-bar {
     display: none;
     height: 2px;
-    background: rgb(47, 255, 227);
+    background: rgb(188, 175, 69);
     width: 0%;
   }
 
@@ -156,39 +153,133 @@ section .title::before{
     width:170px;
     height:3px;
     left: 50%;
-    background: #111;
+    background: rgb(231, 231, 231);
     transform:translateX(-50%)
 }
 section .title::after{
     position: absolute;
     bottom:-7px;
-    color:rgb(47, 255, 227);
+    color:rgb(188, 175, 69);
     font-size: 20px;;
     padding:5px;
     left: 50%;
-    background: rgb(255, 255, 255);
+    background: black;
     transform:translateX(-50%);
 }
 /* home section styling */
 
 .home{
+    z-index: -1;
+    position: relative;
     display: flex;
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(images\abstract-3866503_1280.jpg) no-repeat center;
-    color: white;
+    background-color: black;
+    color: rgb(189, 189, 189);
     min-height: 500px;
+    border-bottom: 1px solid rgba(188, 175, 69,0.3);;
 }
 
 .home .max-width{
-    margin:auto 0 auto 40px
+    margin:auto 0 auto 40px;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+/* first layer of cog wheels */
+ .cog-one{
+     top:11%;
+    position: absolute;
+    margin-left:39%;
+    width:25%;
+    animation: cog-rotate  linear infinite 8s;
+}
+.cog-two{
+    top:15%;
+    margin-left:41%;
+    position: absolute;
+    width:45%;
+    animation: cog-rotate  linear infinite reverse 4s;
+}
+.cog-three{
+    top:19%;
+    margin-left:5%;
+    position: absolute;
+    width:40%;
+    animation: cog-rotate  linear infinite reverse 16s;
+}
+
+/* second layer of cog wheels */
+.cog-four{
+    position: absolute;
+   top:23%;
+   opacity: 0.5;
+   width:20%;
+   animation: cog-rotate  linear infinite 20s;
+}
+.cog-five{
+    opacity: 0.5;
+   top:10%;
+   margin-left:17%;
+   position: absolute;
+   width:40%;
+   animation: cog-rotate  linear infinite reverse 40s;
+}
+.cog-six{
+    opacity: 0.5;
+   top:16%;
+   margin-left:53%;
+   position: absolute;
+   width:25%;
+   animation: cog-rotate  linear infinite 20s;
+}
+/* third layer of cog wheels */
+.cog-seven{
+    position: absolute;
+   top:21%;
+   opacity: 0.3;
+   width:40%;
+   animation: cog-rotate  linear infinite 64s;
+}
+.cog-eight{
+    opacity: 0.3;
+   top:0%;
+   margin-left:31%;
+   position: absolute;
+   width:25%;
+   animation: cog-rotate  linear infinite reverse 32s;
+}
+.cog-nine{
+    opacity: 0.3;
+   top:21%;
+   margin-left:47%;
+   position: absolute;
+   width:40%;
+   animation: cog-rotate  linear infinite  64s;
+}
+
+@keyframes cog-rotate{
+    from {
+    -webkit-transform: rotate(0deg);
+    }
+    to {
+     -webkit-transform: rotate(359deg);
+    }
+}
+@keyframes cog-rotate-reverse{
+    from {
+    -webkit-transform: rotate(0deg);
+    }
+    to {
+     -webkit-transform: rotate(-359deg);
+    }
+}
 .home .home-content .text-1{
     font-size: 25px;
 }
-
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600px;
@@ -201,27 +292,28 @@ section .title::after{
 }
 
 .home .home-content .text-3 #designer{
-    color: rgb(47, 255, 227);
+    color:rgb(188, 175, 69);
     font-weight: 500px;
 }
 
 .home .home-content a{
     display:inline-block;
     background:rgb(0,0,0,0,3);
-    color: rgb(47, 255, 227);
+    color: rgb(188, 175, 69);
     font-size: 20px;
     font-weight: 100;
     padding: 15px;
     margin-top: 20px;
-    border: 1px solid rgb(47, 255, 227);
+    border: 1px solid rgb(188, 175, 69);
     transition: 0.3s ease;
     
 }
 .home .home-content a:hover{
     cursor: pointer;
-    color:rgb(47, 255, 227);
-    background-color: rgb(0,0,0,0.5);
+    background-color:rgb(188, 175, 69);
+    color: rgb(0,0,0);
 }
+
 .home-social {
     list-style: none;
     font-family: "Montserrat", sans-serif;
@@ -271,7 +363,7 @@ section .title::after{
     background-color: #151515;
     font-size: 10px;
     line-height: 30px;
-    color: rgb(47, 255, 227);
+    color: rgb(188, 175, 69);
     right: 50px;
     padding: 0 15px;
     margin: 3px 0;
@@ -311,7 +403,9 @@ section .title::after{
 .about, .skills,.projects{
     font-family: 'Poppins', sans-serif;
 }
-
+.about{
+    z-index: 1;
+}
 .about h2::after{
     content: 'who i am';
 }
@@ -322,7 +416,7 @@ section .title::after{
     justify-content: space-between;
 }
 .about .about-content .left{
-    width:55%
+    width:55%;
 }
 
 .about .about-content .left img{
@@ -337,37 +431,38 @@ section .title::after{
 .about .about-content .right .text{
    font-size: 25px;
    font-weight: 600;
-   color: rgb(49, 49, 49);
+   color: rgb(241, 241, 241);
    margin-bottom:10px;
 }
 .about .about-content .right span{
-    color:rgb(47, 255, 227);
+    color:rgb(188, 175, 69);
  }
 .about .about-content .right p{
     text-align: justify;
-    color:rgb(71, 71, 71);
+    color:rgb(255, 255, 255);
     font-size: 20px;
 
  }
  .about .about-content .right a{
      display:inline-block;
-     background:rgb(255, 255, 255);
-     color: rgb(2, 224, 195);
+     background:rgb(0, 0, 0);
+     color:rgb(188, 175, 69);
      font-size: 20px;
      padding: 10px;
      margin-top: 20px;
      border-radius:6px;
-     border: 1px solid rgb(47, 255, 227);
+     border: 1px solid rgb(188, 175, 69);
      transition: 0.3s ease;
  }
  .about .about-content .right a:hover{
-    background:rgb(0, 0, 0);
+    background:rgb(188, 175, 69);
+    color: black;
  }
 
  /* skills section styling */
  .skills{
      color:white;
-     background: rgb(20, 20, 20);
+     background: rgb(0, 0, 0);
  }
  .skills .skills-content
  {
@@ -404,7 +499,7 @@ section .title::after{
     left:0;
     width:100%;
     height:100%;
-    background: #333;
+    background: rgb(20, 20, 20);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -417,7 +512,7 @@ section .title::after{
     width:120px;
     height:120px;
     left:-75px;
-    box-shadow: -5px -5px 2px rgb(47, 255, 227);
+    box-shadow: -5px -5px 2px rgb(188, 175, 69);
 }
 .label-one:before{
   content:'';
@@ -426,7 +521,7 @@ section .title::after{
   right:0;
   width:20%;
   height:10px;
-  background-color: rgb(47, 255, 227);
+  background-color: rgb(188, 175, 69);
   color:white;
   border-bottom-left-radius: 1000px; 
 }
@@ -446,7 +541,7 @@ section .title::after{
     left:0;
     width:20%;
     height:10px;
-    background-color: rgb(47, 255, 227);
+    background-color: rgb(188, 175, 69);
     color:white;
     border-top-right-radius: 1000px; 
   }
@@ -456,7 +551,7 @@ section .title::after{
     border-radius: 10px;
     position:relative;
     font-size: 12px;
-    color:rgb(47, 255, 227);
+    color:rgb(188, 175, 69);
     letter-spacing: 5px;
     text-transform: uppercase;
     
@@ -481,7 +576,7 @@ section .title::after{
 .skills .skills-content .card i{
     margin:10px;
     font-size:50px;
-    color:rgb(47, 255, 227);
+    color:rgb(188, 175, 69);
 }
 .skills .skills-content .card .text{
     font-size: 25px;
@@ -700,7 +795,7 @@ input[type=text],  textarea {
     padding: 12px; 
     background-color: rgb(20, 20, 20);
     border:none;
-    border-bottom: 1px solid rgb(47, 255, 227);
+    border-bottom: 1px solid rgb(188, 175, 69);
     color:white;
     border-radius: 6px;
     box-sizing: border-box; 
@@ -717,10 +812,10 @@ input[type=text],  textarea {
   /* Style the submit button with a specific background color etc */
   .contact input[type=submit] {
     background-color:rgb(20, 20, 20);
-    color: rgb(47, 255, 227);;
+    color: rgb(188, 175, 69);
     padding: 12px 20px;
     border:none;
-    border-bottom: 1px solid rgb(47, 255, 227);
+    border-bottom: 1px solid rgb(188, 175, 69);
     cursor: pointer;
     border-radius: 6px;
     transition: all 0.5s ease;
@@ -730,7 +825,7 @@ input[type=text],  textarea {
   /* When moving the mouse over the submit button, add a darker green color */
   .contact input[type=submit]:hover {
     cursor: pointer;
-    box-shadow:  2px 2px  2px rgb(47, 255, 227);
+    box-shadow:  2px 2px  2pxrgb(188, 175, 69);
   }
   .alert{
     margin:20px;
@@ -771,12 +866,12 @@ footer .back-top{
     float:right;
    
     font-size:25px;
-    border: 1px solid rgb(47, 255, 227);
+    border: 1px solid rgb(188, 175, 69);
     transition: all 0.5s ease-in-out;
 }
 footer .back-top:hover{
     cursor: pointer;
-    background-color:rgb(47, 255, 227);
+    background-color:rgb(188, 175, 69);
     color:black;
 
 }
