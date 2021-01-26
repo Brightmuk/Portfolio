@@ -12,6 +12,7 @@ html{
     font-family: 'IBM Plex Sans', sans-serif;
     color:white
 }
+
 /* preloader styling */
 .loader-bg{
     position:fixed;
@@ -176,7 +177,7 @@ section .title::after{
     width:100%;
 }
 .cog-wheel-background .max-width{
-    margin:auto 0 auto 40px;
+
     position: static;
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +192,7 @@ section .title::after{
     background-attachment: fixed;
     color: rgb(189, 189, 189);
     min-height: 500px;
-    border-bottom: 1px solid rgba(188, 175, 69,0.3);;
+    border-bottom: 1px solid rgba(188, 175, 69,0.3);
 }
 
 .home .max-width{
@@ -208,21 +209,18 @@ section .title::after{
     position: absolute;
     margin-left:39%;
     width:25%;
-    animation: cog-rotate  linear infinite 8s;
 }
 .cog-two{
     top:15%;
     margin-left:41%;
     position: absolute;
     width:45%;
-    animation: cog-rotate  linear infinite reverse 4s;
 }
 .cog-three{
     top:19%;
     margin-left:5%;
     position: absolute;
     width:40%;
-    animation: cog-rotate  linear infinite reverse 16s;
 }
 
 /* second layer of cog wheels */
@@ -231,7 +229,6 @@ section .title::after{
    top:23%;
    opacity: 0.5;
    width:20%;
-   animation: cog-rotate  linear infinite 20s;
 }
 .cog-five{
     opacity: 0.5;
@@ -239,7 +236,6 @@ section .title::after{
    margin-left:17%;
    position: absolute;
    width:40%;
-   animation: cog-rotate  linear infinite reverse 40s;
 }
 .cog-six{
     opacity: 0.5;
@@ -247,7 +243,6 @@ section .title::after{
    margin-left:53%;
    position: absolute;
    width:25%;
-   animation: cog-rotate  linear infinite 20s;
 }
 /* third layer of cog wheels */
 .cog-seven{
@@ -274,14 +269,14 @@ section .title::after{
    animation: cog-rotate  linear infinite  64s;
 }
 
-/* @keyframes cog-rotate{
+@keyframes cog-rotate{
     from {
     -webkit-transform: rotate(0deg);
     }
     to {
      -webkit-transform: rotate(359deg);
     }
-} */
+}
 
 .home .home-content .text-1{
     font-size: 25px;
@@ -410,8 +405,9 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
 }
 .about{
-    z-index: 1;
-    background-color: rgba(0,0,0,0.5);
+    position:relative;
+    background-color: rgba(188, 175, 69,0.1);
+    border-bottom: 1px solid rgba(188, 175, 69,0.5);
 }
 
 .about h2::after{
@@ -422,6 +418,7 @@ section .title::after{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
 }
 .about .about-content .left{
     width:55%;
@@ -470,7 +467,8 @@ section .title::after{
  /* skills section styling */
  .skills{
      color:white;
-     background: rgb(0, 0, 0);
+     background-color: rgba(188, 175, 69,0.2);
+     border-bottom: 1px solid rgba(188, 175, 69,0.5);
  }
  .skills .skills-content
  {
@@ -912,11 +910,70 @@ footer .footer-social {
         margin:10% 30%
      }
 }
-@media (max-width: 991px) {
 
+@media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
+}
+
+@media (max-width: 990px){
+         /* cog wheel adjustment */
+
+     /* cog wheel first layer */
+     /* .cog-one{
+        top:12%;
+       margin-left:39%;
+   }
+   .cog-two{
+       top:16%;
+       margin-left:41%;
+   }
+   .cog-three{
+       top:19%;
+       margin-left:5%;
+       width:40%;
+   } */
+   
+   /* second layer of cog wheels */
+   .cog-four{
+      top:23%;
+      opacity: 0.5;
+      width:20%;
+   }
+   .cog-five{
+       opacity: 0.5;
+      top:13%;
+      margin-left:17%;
+      width:40%;
+   }
+   .cog-six{
+       opacity: 0.5;
+      top:18%;
+      margin-left:54%;
+      width:25%;
+   }
+   /* third layer of cog wheels */
+   .cog-seven{
+      top:21%;
+      opacity: 0.3;
+      width:40%;
+      animation: cog-rotate  linear infinite 64s;
+   }
+   .cog-eight{
+       opacity: 0.3;
+      top:0%;
+      margin-left:31%;
+      width:25%;
+      animation: cog-rotate  linear infinite reverse 32s;
+   }
+   .cog-nine{
+       opacity: 0.3;
+      top:21%;
+      margin-left:47%;
+      width:40%;
+      animation: cog-rotate  linear infinite  64s;
+   }
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -979,12 +1036,57 @@ footer .footer-social {
     .skills .skills-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
-    }
-    
+    } 
 
 }
-
+@media (max-width: 920px) {
+    /* firstlayer of cog wheels */
+        .cog-one{
+            top:13%;
+           margin-left:39%;
+       }
+       .cog-two{
+        top:17%;
+        margin-left:41%;
+    }
+    /* second layer of cog wheels */
+    .cog-five{
+        opacity: 0.5;
+       top:12%;
+       margin-left:17%;
+       width:40%;
+    }
+    .cog-six{
+        opacity: 0.5;
+       top:18%;
+       margin-left:54%;
+       width:25%;
+    }
+}
+@media (max-width: 840px) {
+/* second layer of cog wheels */
+    .cog-five{
+        top:14%;
+        margin-left:17%;
+   }
+   .cog-six{
+    top:19%;
+    margin-left:54%;
+    }
+}
 @media (max-width: 715px) {
+    .cog-one{
+        top:14%;
+       margin-left:39%;
+   }
+   .cog-two{
+    top:17%;
+    margin-left:41%;
+    }
+    .cog-five{
+        top:15%;
+        margin-left:17%;
+   }
     .max-width{
         padding: 0 23px;
     }
@@ -1036,8 +1138,45 @@ footer .footer-social {
         left:0;
         box-shadow: 0 0 0 ;
     }
+}
+
+@media (max-width: 648px) {
+
+    .cog-one{
+        top:15%;
+       margin-left:39%;
+   }
+   .cog-two{
+    top:17%;
+    margin-left:41%;
+    }
+    .cog-five{
+        top:16%;
+        margin-left:17%;
+   }
 
 }
+
+@media (max-width: 520px) {
+
+    .cog-one{
+        top:15.5%;
+       margin-left:39%;
+   }
+   .cog-two{
+    top:18%;
+    margin-left:42%;
+    }
+    .cog-five{
+        top:17%;
+        margin-left:17%;
+   }
+   .cog-six{
+    top:20%;
+    margin-left:54%;
+    }
+}
+
 @media (max-width: 470px) {
     .max-width{
         padding: 0 20px;
@@ -1052,6 +1191,49 @@ footer .footer-social {
     .home .home-content a{
         font-size: 17px;
     }
-
+    .cog-five{
+        top:18%;
+        margin-left:17%;
+        width:40%;
+   }
 }
 
+@media (max-width: 410px) {
+    /* first layer of cogs */
+    .cog-one{
+        top:16.2%;
+       margin-left:47%;
+       width:30%;
+   }
+   .cog-two{
+    top:18.5%;
+    margin-left:51%;
+    width:50%;
+    }
+    .cog-three{
+        top:18.5%;
+        width:50%;
+    }
+    /* second layer of cogs */
+    .cog-four{
+       top:23%;
+       opacity: 0.5;
+       width:25%;
+    }
+    .cog-five{
+        top:14%;
+        margin-left:22%;
+        width:45%;
+   }
+   .cog-six{
+    top:18%;
+    margin-left:64%;
+    width:20%;
+    }
+}
+@media (max-width: 300px) {
+    .max-width{
+        margin:0;
+        padding:0
+    }
+}

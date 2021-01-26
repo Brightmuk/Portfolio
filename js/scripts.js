@@ -3,8 +3,14 @@
 window.addEventListener("scroll", function() {
   const distance = window.pageYOffset;
   //cog wheel rotation on scroll
+  //layer one
   document.querySelector(".cog-one").style.transform = `rotate(${distance/2 }deg)`;
+  document.querySelector(".cog-two").style.transform = `rotate(${-distance }deg)`;
   document.querySelector(".cog-three").style.transform = `rotate(${-distance/4 }deg)`;
+  // layer two
+  document.querySelector(".cog-four").style.transform = `rotate(${distance/6 }deg)`;
+  document.querySelector(".cog-five").style.transform = `rotate(${-distance/12 }deg)`;
+  document.querySelector(".cog-six").style.transform = `rotate(${distance/6 }deg)`;
 
 });
 
@@ -61,10 +67,10 @@ function submitForm(e){
 
   Email.send({
     Host: 'smtp.gmail.com',
-    Username: 'be.rightmuk@gmail.com',
-    Password: 'gikvmenrlobwirzo',
-    To: 'be.rightmuk@gmail.com',
-    From: 'be.rightmuk@gmail.com',
+    Username: 'lebrightdesigns@gmail.com',
+    Password: 'xqsvipwybjupxeha',
+    To: 'lebrightdesigns@gmail.com',
+    From: 'lebrightdesigns@gmail.com',
     Subject: `${name} has sent you a message from your portfolio`,
     Body: `Name:${name} <br> Email: ${email}<br>  ${message}`,
 
