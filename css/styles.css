@@ -166,16 +166,29 @@ section .title::after{
     background: black;
     transform:translateX(-50%);
 }
-/* home section styling */
 
+/* cog wheels background */
+.cog-wheels-background{
+    background-color: black;
+    z-index: -1; 
+    position: fixed;
+    height: 100vh;
+    width:100%;
+}
+.cog-wheel-background .max-width{
+    margin:auto 0 auto 40px;
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* home section styling */
 .home{
-    z-index: -1;
     position: relative;
     display: flex;
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: black;
     color: rgb(189, 189, 189);
     min-height: 500px;
     border-bottom: 1px solid rgba(188, 175, 69,0.3);;
@@ -261,22 +274,15 @@ section .title::after{
    animation: cog-rotate  linear infinite  64s;
 }
 
-@keyframes cog-rotate{
+/* @keyframes cog-rotate{
     from {
     -webkit-transform: rotate(0deg);
     }
     to {
      -webkit-transform: rotate(359deg);
     }
-}
-@keyframes cog-rotate-reverse{
-    from {
-    -webkit-transform: rotate(0deg);
-    }
-    to {
-     -webkit-transform: rotate(-359deg);
-    }
-}
+} */
+
 .home .home-content .text-1{
     font-size: 25px;
 }
@@ -405,7 +411,9 @@ section .title::after{
 }
 .about{
     z-index: 1;
+    background-color: rgba(0,0,0,0.5);
 }
+
 .about h2::after{
     content: 'who i am';
 }

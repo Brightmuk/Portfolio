@@ -1,15 +1,10 @@
 //parallax effect on scroll
+
 window.addEventListener("scroll", function() {
-  var limit = document.body.offsetHeight - window.innerHeight;
-  const distance = window.scrollY;
-  document.querySelector(".home").style.transform = `translateY(${distance *
-    1}px)`;
-    document.querySelector(
-      ".home-content-info"
-    ).style.opacity = `${20/distance}`;
-    document.querySelector(
-      ".home-social"
-    ).style.opacity = `${20/distance}`;
+  const distance = window.pageYOffset;
+  //cog wheel rotation on scroll
+  document.querySelector(".cog-one").style.transform = `rotate(${distance/2 }deg)`;
+  document.querySelector(".cog-three").style.transform = `rotate(${-distance/4 }deg)`;
 
 });
 
