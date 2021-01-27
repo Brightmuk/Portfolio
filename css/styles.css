@@ -722,13 +722,16 @@ section .title::after{
     margin-bottom: 3%;
 }
 
-.project-one img{
+.project-one .sakahapa-img{
     height:200px;
     width:200px;
 }
-.project-one h3 span{
-    color: grey;
+.project-one h3 a{
+    color: rgb(188, 175, 69);
     
+}
+.project-one h3 a:hover{
+    cursor: pointer;
 }
 .project-one p{
     color:rgb(197, 197, 197);
@@ -796,7 +799,7 @@ section .title::after{
     overflow-y: hidden;
     z-index: 1;
     background-color: rgb(0,0,0,0.5);
-    border: 0.1em solid rgba(188, 175, 69,0.5);
+    
     width:80%;
     position: absolute;
     height:80%;
@@ -852,7 +855,6 @@ input[type=text],  textarea {
     border:none;
     border-bottom: 1px solid rgb(188, 175, 69);
     color:white;
-    border-radius: 6px;
     box-sizing: border-box; 
     margin-top: 8px; 
     margin-bottom: 20px; 
@@ -872,7 +874,6 @@ input[type=text],  textarea {
     border:none;
     border-bottom: 1px solid rgb(188, 175, 69);
     cursor: pointer;
-    border-radius: 6px;
     transition: all 0.5s ease;
     margin-left:70%;
   }
@@ -887,7 +888,7 @@ input[type=text],  textarea {
     padding:20px;
     width:100%;
     text-align:center;
-    background:rgb(47, 255, 227,0.5);
+    background:rgba(188, 175, 69,0.5);
     animation:alert-fade 3s alternate;
     
   }
@@ -1260,6 +1261,10 @@ footer .footer-social {
 }
 
 @media (max-width: 410px) {
+    .project-one .sakahapa-img{
+        height:150px;
+        width:150px;
+    }
     /* first layer of cogs */
     .cog-one{
         top:16.2%;

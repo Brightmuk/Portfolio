@@ -51,6 +51,7 @@ function scrollIndication() {
 //swiper
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
+      initialSlide:4,
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 'auto',
@@ -63,6 +64,10 @@ function scrollIndication() {
       },
       pagination: {
         el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
 
@@ -117,10 +122,10 @@ scrollToTopBtn.addEventListener("click", scrollToTop)
 //show project modal
 $(document).ready(function(){
   $(".view-project").click(function(){
-    $(".modal-bg").animate({top: '0'},1000);
+    $(".modal-bg").animate({top: '0'},800);
   });
   $(".close").click(function(){
-    $(".modal-bg").animate({top: '-100%'},1000);
+    $(".modal-bg").animate({top: '-100%'},600);
   });
 
 });
