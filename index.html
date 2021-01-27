@@ -7,6 +7,13 @@
     <link rel="shortcut icon" href="images/bd-logo.png">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- swiper cdn start here -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- swiper cdn ends here -->
+
 </head>
 <body >
   <!-- pre loader -->
@@ -96,10 +103,11 @@
                 </div>
                 <div class="column right">
                     <div class="text">Im Bright a <span>designer</span></div>
-                    <p>I am all about discipline, simplicity and perfection. We humans have the need to grow.
-                      Being in my early twenties, I spend most of my time behind my screens, trying to keep up to date with trends in technology.
-                      Dont worry though, im not nerdy, just ambitious.
-
+                    <p>based in Nairobi Kenya. Discipline, simplicity and perfection are my key principles. 
+                      Visual design is my passion. Be it UI/Ux design, logo design or graphics design. Believe me, my
+                      hands will always get dirty on these.
+                      Hold up, I was not going to forget to mention my hobby, backend software development. I also 
+                      play the guitar just to make sure im not nerdy.
                     </p>
                     <a href="https://docs.google.com/document/d/1kwAUa3Mbj3zo0_Fi7-bJQhz1ZQOGaAYeYe5ozqBEc7M/edit?usp=sharing">Download cv</a>
             
@@ -121,8 +129,8 @@
                             <div class="label-one"></div> 
                             <div class="label-two"></div> 
                             
-                                <span class="tags">Ui/Ux & backend development</span>
-                                <div class="flex-wrapper">
+                                 <span class="tags">Ui/Ux & backend development</span>
+                               <!-- <div class="flex-wrapper">
                                     <div class="single-chart">
                                       <svg viewbox="0 0 36 36" class="circular-chart orange">
                                         <path class="circle-bg"
@@ -231,7 +239,7 @@
                                   </div>
                         </div>
                         <br>
-                        <p>Engineering of both static and dynamic websites </p>
+                        <p>Engineering of both static and dynamic websites </p> -->
                         </div>
                     </div>
                     <div class="card">  
@@ -340,47 +348,54 @@
 
         <!-- projects section starts here -->
         <section class="projects" id="projects">
-            <div class="max-width">
-                <h2 class="title">My Projects</h2>
-                <div class="projects-content">
-                     
+                <h2 class="title">My Projects</h2>                 
                   <div class="project-cards">
-                    <div class="card card1">
-                        <div class="container">
-                            <img src="images/sakahapa-project.png" alt="las vegas">
+                 <!-- sakahapa sliders -->
+                    <div class="modal-bg">
+                      <div class="modal">
+                        <div class="modal-header">
+                          <div></div>
+                          <h2>SakaHapa</h2>
+                          <p class="close">Close</p>
                         </div>
-                        <div class="details">
-                            <h3>SakaHapa</h3>
-                      
-                            <p>SakaHapa is an e-commerce platform that connects buyers with sellers who deal in fashion products & accessories.</p>
-                            <a href="https://sakahapa.com" class="project-link">View</a>
+                       
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide" style="background-image:url(images/projects/sakahapa/landing-page.png)"></div>
+                          <div class="swiper-slide" style="background-image:url(images/projects/sakahapa/seller-register.png)"></div>
+                          <div class="swiper-slide" style="background-image:url(images/projects/sakahapa/buyer-register.png)"></div>
+                          <div class="swiper-slide" style="background-image:url(images/projects/sakahapa/profile.png)"></div>
+                          <div class="swiper-slide" style="background-image:url(images/projects/sakahapa/single-post.png)"></div>
+                          <div class="swiper-slide" style="background-image:url(images/projects/sakahapa/map.png)"></div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="card card2">
-                        <div class="container">
-                            <img src="images/dashboard-ui-desktop.png" alt="New York">
-                        </div>
-                        <div class="details">
-                            <h3>New York</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
-                            <div class="project-link">View</div>
-                        </div>
+                      </div>
                     </div>
-                    <div class="card card3">
-                        <div class="container">
-                            <img src="images/portfolio-ui-desktop.png" alt="Singapore">
-                        </div>
-                        <div class="details">
-                            <h3>Beijing</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci exercitationem.</p>
-                            <div class="project-link">View</div>
-                        </div>
+                    <div class="project-one">
+                      <div class="image">
+                        <img src="images/projects/sakahapa/sk1.png" class="sakahapa-img">
+                      </div>
+                      <h3 class="text-center">SaKaHapa <span>SakaHapa Inc</span></h3><br/>
+                      <p class="text-center">SakaHapa  is an e-commerce platform that connects buyers with sellers who deal in fashion products & accessories</p>
+                    
+                      <div class="project-info">
+                        <div class="view-project">VIEW</div>
+                      </div>
+                      <div class="project-links">
+                        <div class="playstore">
+                          <img src="images/google.png">
+                           </div>
+                        <div class="appstore">
+                          <img src="images/apple.png">
+                           </div>
+                      </div>
                     </div>
-                </div>
+                    <div class="project-two">
+
+                    </div>
                 </div>
 
-  
-            </div>
         </section>
 
         <!-- contact me section -->
@@ -432,5 +447,4 @@
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <Script src="js/scripts.js"></Script>
-<script src="js/sendmail.js"></script>
 </html>

@@ -48,6 +48,24 @@ function scrollIndication() {
     document.getElementById("myBar").style.width = scrolled + "%";
   }
 
+//swiper
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
 
 //show loader on page load
 setTimeout(function(){
@@ -95,3 +113,14 @@ function scrollToTop() {
   })
 }
 scrollToTopBtn.addEventListener("click", scrollToTop)
+
+//show project modal
+$(document).ready(function(){
+  $(".view-project").click(function(){
+    $(".modal-bg").animate({top: '0'},1000);
+  });
+  $(".close").click(function(){
+    $(".modal-bg").animate({top: '-100%'},1000);
+  });
+
+});
