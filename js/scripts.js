@@ -51,7 +51,7 @@ function scrollIndication() {
 //swiper
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
-      initialSlide:4,
+      initialSlide:3,
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 'auto',
