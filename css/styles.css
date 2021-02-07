@@ -217,69 +217,140 @@ section .title::after{
 }
 
 /* first layer of cog wheels */
- .cog-one{
-     top:11%;
+.cog-wheels-1pt .cog-one{
     position: absolute;
-    margin-left:39%;
-    width:25%;
+   top:190px;
+   margin-left: 395px;
+   width:170px;
 }
-.cog-two{
-    top:15%;
-    margin-left:41%;
+.cog-wheels-1pt .cog-two{
+    top:328px;
+    margin-left:380px;
     position: absolute;
-    width:45%;
+    width:300px;
 }
-.cog-three{
-    top:19%;
-    margin-left:5%;
-    position: absolute;
-    width:40%;
+.cog-wheels-1pt .cog-three{
+   top:300px;
+   position: absolute;
+   margin-left:200px;
+   width:300px;
 }
 
 /* second layer of cog wheels */
-.cog-four{
+.cog-wheels-1pt .cog-four{
     position: absolute;
-   top:23%;
-   opacity: 0.5;
-   width:20%;
+   top:115px;
+   margin-left:90px;
+   opacity: 0.8;
+   width:300px;
 }
-.cog-five{
-    opacity: 0.5;
-   top:10%;
-   margin-left:17%;
+.cog-wheels-1pt .cog-five{
+    opacity: 0.8;
+   top:130px;
+   margin-left:323px;
    position: absolute;
-   width:40%;
+   width:600px;
 }
-.cog-six{
-    opacity: 0.5;
-   top:16%;
-   margin-left:53%;
+.cog-wheels-1pt .cog-six{
+    opacity: 0.8;
+   top:440px;
+   margin-left:860px;
    position: absolute;
-   width:25%;
+   width:300px;
 }
 /* third layer of cog wheels */
-.cog-seven{
+.cog-wheels-1pt .cog-seven{
     position: absolute;
-   top:21%;
+   top:151px;
    opacity: 0.3;
-   width:40%;
+   width:600px;
    animation: cog-rotate  linear infinite 64s;
 }
-.cog-eight{
+.cog-wheels-1pt .cog-eight{
     opacity: 0.3;
-   top:0%;
-   margin-left:31%;
+   top:53px;
+   margin-left:475px;
    position: absolute;
-   width:25%;
+   width:300px;
    animation: cog-rotate  linear infinite reverse 32s;
 }
-.cog-nine{
+.cog-wheels-1pt .cog-nine{
     opacity: 0.3;
-   top:21%;
-   margin-left:47%;
+   top:151px;
+   margin-left:650px;
    position: absolute;
-   width:40%;
-   animation: cog-rotate  linear infinite  64s;
+   width:600px;
+   animation: cog-rotate  linear infinite 64s;
+}
+
+/* 3pt for small screen */
+
+/* first layer of cog wheels */
+.cog-wheels-3pt .cog-one{
+    position: absolute;
+   top:190px;
+   margin-left: 395px;
+   width:170px;
+}
+.cog-wheels-3pt .cog-two{
+    top:328px;
+    margin-left:380px;
+    position: absolute;
+    width:300px;
+}
+.cog-wheels-3pt .cog-three{
+   top:300px;
+   position: absolute;
+   margin-left:200px;
+   width:300px;
+}
+
+/* second layer of cog wheels */
+.cog-wheels-3pt .cog-four{
+    position: absolute;
+   top:90px;
+   margin-left:10px;
+   opacity: 0.8;
+   width:140px;
+}
+.cog-wheels-3pt .cog-five{
+    opacity: 0.8;
+   top:150px;
+   margin-left:100px;
+   position: absolute;
+   width:240px;
+}
+.cog-wheels-3pt .cog-six{
+    opacity: 0.8;
+   top:375px;
+   margin-left:173px;
+   position: absolute;
+   width:140px;
+}
+/* third layer of cog wheels */
+.cog-wheels-3pt .cog-seven{
+    opacity: 0.8;
+   top:150px;
+   margin-left:100px;
+   position: absolute;
+   width:240px;
+   animation: cog-rotate  linear infinite reverse 64s;
+}
+.cog-wheels-3pt .cog-eight{
+    position: absolute;
+   top:90px;
+   margin-left:10px;
+   opacity: 0.8;
+   width:140px;
+   animation: cog-rotate  linear infinite  32s;
+}
+.cog-wheels-3pt .cog-nine{
+    opacity: 0.8;
+   top:375px;
+   margin-left:173px;
+   position: absolute;
+   width:140px;
+   animation: cog-rotate  linear infinite 32s;
 }
 
 @keyframes cog-rotate{
@@ -312,7 +383,7 @@ section .title::after{
 
 .home .home-content a{
     display:inline-block;
-    background:rgb(0,0,0,0,3);
+    background:rgb(0,0,0,0.7);
     color: rgb(188, 175, 69);
     font-size: 20px;
     font-weight: 100;
@@ -478,21 +549,21 @@ section .title::after{
 
  /* skills section styling */
  .skills{
-     color:white;
-     background-color: rgba(188, 175, 69,0.2);
-     border-bottom: 1px solid rgba(188, 175, 69,0.5);
+    color:white;
+    background-color: rgba(188, 175, 69,0.2);
+    border-bottom: 1px solid rgba(188, 175, 69,0.5);
  }
  .skills .skills-content
  {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
  }
  .skills .title::before{
    background: white;
 }
 .skills .title::after{
-    background: rgb(20, 20, 20);
+    background: rgb(0, 0, 0);
     content:'what i do'
 }
 .skills .skills-content .card{
@@ -704,6 +775,7 @@ section .title::after{
 }
 .projects .title::after{
     content: 'what I\'ve done';
+    background: rgb(0, 0, 0);
 
 }
 .project-cards{
@@ -834,7 +906,7 @@ section .title::after{
 /* contact styling */
 .contact{
     color:white;
-    background: rgb(20, 20, 20);
+    background: rgb(7, 7, 7);
 }
 .contact .contact-content
 {
@@ -847,14 +919,14 @@ section .title::after{
   background: white;
 }
 .contact .title::after{
-   background: rgb(20, 20, 20);
+    background: rgb(0, 0, 0);
    content:'Talk to me'
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],  textarea {
     width: 100%; 
     padding: 12px; 
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(7, 7, 7);
     border:none;
     border-bottom: 1px solid rgb(188, 175, 69);
     color:white;
@@ -871,7 +943,7 @@ input[type=text],  textarea {
   
   /* Style the submit button with a specific background color etc */
   .contact input[type=submit] {
-    background-color:rgb(20, 20, 20);
+    background-color:rgb(7, 7, 7);
     color: rgb(188, 175, 69);
     padding: 12px 20px;
     border:none;
@@ -884,7 +956,7 @@ input[type=text],  textarea {
   /* When moving the mouse over the submit button, add a darker green color */
   .contact input[type=submit]:hover {
     cursor: pointer;
-    box-shadow:  2px 2px  2pxrgb(188, 175, 69);
+    box-shadow:  2px 2px  2px rgb(188, 175, 69);
   }
   .alert{
     margin:20px;
@@ -973,65 +1045,8 @@ footer .footer-social {
     }
 }
 
-@media (max-width: 990px){
-         /* cog wheel adjustment */
-
-     /* cog wheel first layer */
-     /* .cog-one{
-        top:12%;
-       margin-left:39%;
-   }
-   .cog-two{
-       top:16%;
-       margin-left:41%;
-   }
-   .cog-three{
-       top:19%;
-       margin-left:5%;
-       width:40%;
-   } */
-   
-   /* second layer of cog wheels */
-   .cog-four{
-      top:23%;
-      opacity: 0.5;
-      width:20%;
-   }
-   .cog-five{
-       opacity: 0.5;
-      top:13%;
-      margin-left:17%;
-      width:40%;
-   }
-   .cog-six{
-       opacity: 0.5;
-      top:18%;
-      margin-left:54%;
-      width:25%;
-   }
-   /* third layer of cog wheels */
-   .cog-seven{
-      top:21%;
-      opacity: 0.3;
-      width:40%;
-      animation: cog-rotate  linear infinite 64s;
-   }
-   .cog-eight{
-       opacity: 0.3;
-      top:0%;
-      margin-left:31%;
-      width:25%;
-      animation: cog-rotate  linear infinite reverse 32s;
-   }
-   .cog-nine{
-       opacity: 0.3;
-      top:21%;
-      margin-left:47%;
-      width:40%;
-      animation: cog-rotate  linear infinite  64s;
-   }
-}
 @media (max-width: 947px){
+
     .menu-btn{
         display: block;
         z-index: 999;
@@ -1046,7 +1061,7 @@ footer .footer-social {
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: rgb(0, 0, 0);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -1095,54 +1110,9 @@ footer .footer-social {
     } 
 
 }
-@media (max-width: 920px) {
-    /* firstlayer of cog wheels */
-        .cog-one{
-            top:13%;
-           margin-left:39%;
-       }
-       .cog-two{
-        top:17%;
-        margin-left:41%;
-    }
-    /* second layer of cog wheels */
-    .cog-five{
-        opacity: 0.5;
-       top:12%;
-       margin-left:17%;
-       width:40%;
-    }
-    .cog-six{
-        opacity: 0.5;
-       top:18%;
-       margin-left:54%;
-       width:25%;
-    }
-}
-@media (max-width: 840px) {
-/* second layer of cog wheels */
-    .cog-five{
-        top:14%;
-        margin-left:17%;
-   }
-   .cog-six{
-    top:19%;
-    margin-left:54%;
-    }
-}
+
+
 @media (max-width: 715px) {
-    .cog-one{
-        top:14%;
-       margin-left:39%;
-   }
-   .cog-two{
-    top:17%;
-    margin-left:41%;
-    }
-    .cog-five{
-        top:15%;
-        margin-left:17%;
-   }
     .max-width{
         padding: 0 23px;
     }
@@ -1197,43 +1167,12 @@ footer .footer-social {
 }
 
 @media (max-width: 648px) {
-
-    .cog-one{
-        top:15%;
-       margin-left:39%;
-   }
-   .cog-two{
-    top:17%;
-    margin-left:41%;
-    }
-    .cog-five{
-        top:16%;
-        margin-left:17%;
-   }
    .project-cards .project-one{
        width:40%
    }
-
 }
 
 @media (max-width: 520px) {
-
-    .cog-one{
-        top:15.5%;
-       margin-left:39%;
-   }
-   .cog-two{
-    top:18%;
-    margin-left:42%;
-    }
-    .cog-five{
-        top:17%;
-        margin-left:17%;
-   }
-   .cog-six{
-    top:20%;
-    margin-left:54%;
-    }
     .project-cards .project-one{
         width:50%
     }
@@ -1253,11 +1192,6 @@ footer .footer-social {
     .home .home-content a{
         font-size: 17px;
     }
-    .cog-five{
-        top:18%;
-        margin-left:17%;
-        width:40%;
-   }
    .project-cards .project-one{
     width: 80%;
     }
@@ -1267,43 +1201,12 @@ footer .footer-social {
     .cog-wheels-3pt{
         display: block;
     }
-    .cog-wheels{
+    .cog-wheels-1pt{
         display: none;
     }
     .project-one .sakahapa-img{
         height:150px;
         width:150px;
-    }
-    /* first layer of cogs */
-    .cog-one{
-        top:16.2%;
-       margin-left:47%;
-       width:30%;
-   }
-   .cog-two{
-    top:18.5%;
-    margin-left:51%;
-    width:50%;
-    }
-    .cog-three{
-        top:18.5%;
-        width:50%;
-    }
-    /* second layer of cogs */
-    .cog-four{
-       top:23%;
-       opacity: 0.5;
-       width:25%;
-    }
-    .cog-five{
-        top:14%;
-        margin-left:22%;
-        width:45%;
-   }
-   .cog-six{
-    top:18%;
-    margin-left:64%;
-    width:20%;
     }
 }
 @media (max-width: 320px) {

@@ -1,23 +1,18 @@
-//parallax effect on scroll
-
-window.addEventListener("scroll", function() {
-  const distance = window.pageYOffset;
-  //cog wheel rotation on scroll
-  //layer one
-  document.querySelector(".cog-one").style.transform = `rotate(${distance/2 }deg)`;
-  document.querySelector(".cog-two").style.transform = `rotate(${-distance }deg)`;
-  document.querySelector(".cog-three").style.transform = `rotate(${-distance/4 }deg)`;
-  // layer two
-  document.querySelector(".cog-four").style.transform = `rotate(${distance/6 }deg)`;
-  document.querySelector(".cog-five").style.transform = `rotate(${-distance/12 }deg)`;
-  document.querySelector(".cog-six").style.transform = `rotate(${distance/6 }deg)`;
-
-});
-
-//sticky nav
 $(document).ready(function(){
     $(window).scroll(function(){
-     
+
+      const distance = window.pageYOffset;
+      //cog wheel rotation on scroll
+      //layer one
+      $(".cog-one").css('transform', `rotate(${distance/2 }deg)`);
+      $(".cog-two").css('transform', `rotate(${distance }deg)`);
+      $(".cog-three").css('transform', `rotate(${-distance/4 }deg)`);
+      // layer two
+      $(".cog-four").css('transform', `rotate(${distance/6 }deg)`);
+      $(".cog-five").css('transform', `rotate(${-distance/12 }deg)`);
+      $(".cog-six").css('transform', `rotate(${distance/6 }deg)`);
+
+      //sticky nav
         if(this.scrollY > 20){
             scrollIndication();
             $('.navbar').addClass('sticky');
@@ -51,7 +46,6 @@ function scrollIndication() {
 //swiper
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
-      initialSlide:3,
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 'auto',
