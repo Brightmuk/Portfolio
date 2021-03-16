@@ -490,7 +490,7 @@ section .title::after{
 }
 .about{
     position:relative;
-    background-color: rgba(188, 175, 69,0.1);
+    background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid rgba(188, 175, 69,0.5);
 }
 
@@ -560,94 +560,6 @@ section .title::after{
 }
 
 
-/* circular progress indicators styling */
-.flex-wrapper {
-    margin-top:10%;
-    display: flex;
-    flex-flow: row nowrap;
-  }
-  
-  .single-chart {
-    width: 50%;
-    justify-content: space-around ;
-  }
-  .single-chart .technology{
-    padding:5px;
-    border-radius: 10px;
-    font-size: 8px;
-    color:white;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-  }
-  
-  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .circle-bg {
-    fill: none;
-    stroke: #333;
-    stroke-width: 3.8;
-  }
-  
-  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-    animation: progress 1s ease-out forwards;
-  }
-  
-  @keyframes progress {
-    0% {
-      stroke-dasharray: 0 100;
-    }
-  }
-  
-  .circular-chart.orange .circle {
-    stroke: #ff9f00;
-  }
-  
-  .circular-chart.green .circle {
-    stroke: rgb(255, 59, 92);
-  }
-  
-  .circular-chart.blue .circle {
-    stroke: #3c9ee5;
-  }
-  
-  .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-  }
-  .logos-wrapper{
-    margin-top:10%;
-    display: flex;
-    flex-flow: column nowrap;
-   
-  }
-  .logos{
-      height:80px;
-      width:80px;
-  }
-  .single-logo{
-      display:flex;
-      align-items: flex-start;
-  }
-  .single-logo .logo-name{
-    margin-left:30px;
-    padding:5px;
-    border-radius: 10px;
-    font-size: 8px;
-    color:white;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    float:right
-  }
 
 /* projects section styling */
 .projects{
@@ -660,25 +572,26 @@ section .title::after{
     background: rgb(0, 0, 0);
 
 }
-.project-cards{
+/* .project-cards{
     overflow: auto;
     white-space: nowrap;
     margin-top:5%
+} */
+
+.project-cards {
+    justify-content: center;
+    display: flex;
 }
-.project-cards .project{
-    display: inline-block;
-}
-.project .project-one,
-.project-two,.project-three,
-.project-four{
+
+.projects .project-one{
     background-color: black;
-   
-    width: 500px;
+    width: 50vw;
     height: 500px;
     padding:10px 10px;
     margin:20px 20px;
     border:1px solid rgb(188, 175, 69,0.1);
 }
+
 .project-one .image{
     width:100%;
     display:flex;
@@ -979,17 +892,13 @@ footer .fa-angle-double-up:hover{
     color: rgb(188, 175, 69);
 }
 footer .footer-text{
-    color: rgb(158, 158, 158);
+    color: rgb(185, 184, 184);
 } 
-
 
 
  /* resposiveness styling */
 
  @media (max-width: 1104px) {
-    .project-cards .project-one{
-        width: 30%;
-    }
     .about .about-content .left img{
         height: 450px;
         width: 300px;
@@ -1219,6 +1128,6 @@ footer .footer-text{
 @media (max-width: 320px) {
     .max-width{
         margin:0;
-        padding:0
+        padding:3
     }
 }

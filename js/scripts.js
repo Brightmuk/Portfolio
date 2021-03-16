@@ -142,6 +142,7 @@ var myChart = new Chart(ctx, {
           barPercentage: 1,
           barThickness: 90,
           maxBarThickness: 100,
+          minBarThickness:2,
           minBarLength: 2,
           backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
