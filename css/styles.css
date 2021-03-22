@@ -558,6 +558,86 @@ section .title::after{
     background: rgb(0, 0, 0);
 
 }
+.skills{
+    color:white;
+    background-color: rgba(188, 175, 69,0.2);
+    border-bottom: 1px solid rgba(188, 175, 69,0.5);
+}
+.skills .title::before{
+    background: white;
+  }
+  .skills .title::after{
+     background: rgb(20, 20, 20);
+     content:'what i do'
+  }
+.skills .skills-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.single-chart {
+    width: 300PX;
+    justify-content: center ;
+}
+/* .skills-content .mobile{
+    width: 400px;
+  } */
+  .single-chart .technology{
+    padding:5px;
+    border-radius: 10px;
+    font-size: 13px;
+    color:rgb(188, 175, 69);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: rgba(0,0,0,0.5);
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: rgba(247, 228, 90, 0.7);
+  }
+  
+  .circular-chart.green .circle {
+    stroke: rgba(247, 228, 90, 0.7);
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: rgba(247, 228, 90, 0.7);
+  }
+  
+  .percentage {
+    fill: rgb(207, 207, 207);
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
 
 
 
@@ -589,7 +669,7 @@ section .title::after{
     height: 500px;
     padding:10px 10px;
     margin:20px 20px;
-    border:1px solid rgb(188, 175, 69,0.1);
+   
 }
 
 .project-one .image{
