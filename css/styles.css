@@ -589,7 +589,7 @@ section .title::after{
     padding:5px;
     border-radius: 10px;
     font-size: 13px;
-    color:rgb(188, 175, 69);
+    color:rgb(255, 255, 255);
     letter-spacing: 5px;
     text-transform: uppercase;
   }
@@ -665,7 +665,7 @@ section .title::after{
 
 .projects .project-one{
     background-color: black;
-    width: 50vw;
+    width: 30vw;
     height: 500px;
     padding:10px 10px;
     margin:20px 20px;
@@ -707,7 +707,7 @@ section .title::after{
 }
 .project-one .view-project{
     text-align: center;
-    width: 100%;
+    width: 50%;
     background-color: rgb(0,0,0,0.3);
     border:1px solid rgba(188, 175, 69,0.3);
     padding:10px 20px;
@@ -1123,6 +1123,12 @@ footer .footer-text{
         left:0;
         box-shadow: 0 0 0 ;
     }
+    .projects .project-one{
+        background-color: black;
+        width: 50vw;
+       
+    }
+    
     footer{
         padding-top: 5px;
         justify-content: center;
