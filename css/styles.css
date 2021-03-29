@@ -585,7 +585,7 @@ section .title::after{
 /* .skills-content .mobile{
     width: 400px;
   } */
-  .single-chart .technology{
+  .single-chart .technology-header{
     padding:5px;
     border-radius: 10px;
     font-size: 13px;
@@ -593,6 +593,29 @@ section .title::after{
     letter-spacing: 5px;
     text-transform: uppercase;
   }
+  .single-chart .technologies{
+     padding:30px;
+  }
+
+  .single-chart .technologies p{
+    /* border-left: 2px solid rgba(247, 228, 90, 0.7); */
+    
+    padding: 5px;
+ }
+
+
+.technologies p #framework{
+    color:rgba(206, 203, 7,0.5);
+
+}
+.technologies p #lang{
+    color:rgba(206, 203, 7,0.5);
+    
+}
+.technologies p #tool{
+    color:rgba(206, 203, 7,0.5);
+}
+
   
   .circular-chart {
     display: block;
