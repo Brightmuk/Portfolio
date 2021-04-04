@@ -722,11 +722,23 @@ width: 50%;
     justify-content: center;
 }
 
-.project-one .project-links .playstore,.appstore{
-    padding:10px 20px;
-    border-radius: 20px;
+.playstore,.appstore{
+    padding: 15px;
+    border: 01px solid rgb(188, 175, 69,0.5);
+    border-radius: 50px;
     margin:3%;
+    height: 60px;
+    width: 60px;
     background-color: rgb(0,0,0);
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+.appstore:hover{
+    opacity: 1;
+}
+.playstore:hover{
+    opacity: 1;
 }
 .project-links img{
     width:30px;
