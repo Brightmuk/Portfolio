@@ -578,8 +578,7 @@ width: 50%;
      background: rgb(20, 20, 20);
      content:'what i do'
   }
-.skills .skills-content
-{
+.skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -810,13 +809,13 @@ width: 50%;
     color:white;
     background: rgb(7, 7, 7);
 }
-.contact .contact-content
-{
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin:10% 10%
+    margin:10% 5%
 }
+
 .contact .title::before{
   background: white;
 }
@@ -824,13 +823,34 @@ width: 50%;
     background: rgb(0, 0, 0);
    content:'Talk to me'
 }
+
+.contact .contacts{
+    margin: 3%;
+    width: 400px;
+    font-size: 30px;
+    color: rgb(77, 76, 76);
+}
+.contact .contacts i{
+    color: rgb(188, 175, 69);
+    font-size: 100;
+    margin-right: 10px;
+}
+
+
+.contact form{
+    margin: 3%;
+    width: 400px;
+}
+input:focus{
+    background-color: rgb(7, 7, 7);
+    border: 0.5px solid rgba(188, 175, 69,0.5);
+}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],  textarea {
     width: 100%; 
     padding: 12px; 
     background-color: rgb(7, 7, 7);
-    border:none;
-    border-bottom: 1px solid rgb(188, 175, 69);
+    border: 0.5px solid rgba(188, 175, 69,0.5);
     color:white;
     box-sizing: border-box; 
     margin-top: 8px; 
@@ -840,41 +860,38 @@ input[type=text],  textarea {
   }
   input[type=text]:focus,  textarea:focus {
     outline: none;
-   
   }
-  
+
   /* Style the submit button with a specific background color etc */
+  input[type=submit]:focus{
+    border: 0.5px solid rgba(188, 175, 69,0.5);
+  }
+
   .contact input[type=submit] {
-    background-color:rgb(7, 7, 7);
-    color: rgb(188, 175, 69);
-    padding: 12px 20px;
-    border:none;
-    border-bottom: 1px solid rgb(188, 175, 69);
-    cursor: pointer;
-    transition: all 0.5s ease;
-    margin-left:70%;
+    width: 100%;
   }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  .contact input[type=submit]:hover {
-    cursor: pointer;
-    box-shadow:  2px 2px  2px rgb(188, 175, 69);
-  }
+
   .alert{
-    margin:20px;
     padding:20px;
     width:100%;
     text-align:center;
     background:rgba(188, 175, 69,0.5);
-    animation:alert-fade 3s alternate;
+    animation: alert-fade 5s alternate;
     
   }
-  .mail-not-sent{
+  .mail-sent{
+      margin-top: 5px;
       display:none
   }
-  .mail-sent{
-    display:block
-  }
+  .mail-not-sent{
+    margin-top: 5px;
+    display:none;
+    background: rgba(245, 82, 90, 0.1);
+}
+.visible{
+    display:block;
+}
+
   @keyframes alert-fade {
     from{
         opacity:1;
@@ -997,6 +1014,16 @@ footer .footer-text{
 
 
  /* resposiveness styling */
+ @media (max-width: 1500px) {
+
+    .contact .contact-content{
+        justify-content: center;
+        margin:10% 5%
+    }
+    .contact .contacts{
+        font-size: 20px;
+    }
+}
 
  @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -1007,12 +1034,16 @@ footer .footer-text{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-}
-@media(min-width:990px){
     .contact .contact-content{
-        margin:10% 30%
-     }
+        justify-content: center;
+        margin:10% 5%
+    }
 }
+
+
+
+
+
 
 @media (max-width: 991px) {
     .max-width{

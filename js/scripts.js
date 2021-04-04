@@ -1,3 +1,8 @@
+//show loader on page load
+setTimeout(function(){
+  $('.loader-bg').fadeToggle();
+},1500);
+
 $(document).ready(function(){
     $(window).scroll(function(){
 
@@ -66,11 +71,6 @@ function scrollIndication() {
     });
 
 
-//show loader on page load
-setTimeout(function(){
-  $('.loader-bg').fadeToggle();
-},1500);
-
 //contact form submission
 document.querySelector('.contact-form').addEventListener('submit',submitForm);
 function submitForm(e){
@@ -79,8 +79,6 @@ function submitForm(e){
   let name = document.querySelector('.name').value;
   let email = document.querySelector('.email').value;
   let message = document.querySelector('.message').value;
-
-  document.querySelector('.contact-form').reset();
 
   Email.send({
     Host: 'smtp.gmail.com',
@@ -91,13 +89,22 @@ function submitForm(e){
     Subject: `${name} has sent you a message from your portfolio`,
     Body: `Name:${name} <br> Email: ${email}<br>  ${message}`,
 
-  }).then((message)=>showAlert())
+  }).then((message)=>{
+    showAlert(message);
+  })
 }
 
 //show message sent alert
-function showAlert(){
-  $('.alert').removeClass('mail-not-sent')
-setTimeout(function(){$('.alert').addClass('mail-not-sent')  }, 3000);
+function showAlert(message){
+ 
+  if(message!='OK'){
+    $('.mail-not-sent').addClass('visible')
+    setTimeout(function(){$('.mail-not-sent').removeClass('visible') }, 5000);
+  }else{
+    document.querySelector('.contact-form').reset();
+    $('.mail-sent').addClass('visible')
+    setTimeout(function(){$('.mail-sent').removeClass('visible') }, 5000);
+  }
 }
 
 
