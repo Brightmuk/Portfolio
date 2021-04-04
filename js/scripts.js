@@ -85,9 +85,9 @@ function submitForm(e){
     Username: 'lebrightdesigns@gmail.com',
     Password: 'xqsvipwybjupxeha',
     To: 'lebrightdesigns@gmail.com',
-    From: 'lebrightdesigns@gmail.com',
+    From: email,
     Subject: `${name} has sent you a message from your portfolio`,
-    Body: `Name:${name} <br> Email: ${email}<br>  ${message}`,
+    Body: ` ${message}`,
 
   }).then((message)=>{
     showAlert(message);
@@ -96,7 +96,7 @@ function submitForm(e){
 
 //show message sent alert
 function showAlert(message){
- 
+  console.log(message);
   if(message!='OK'){
     $('.mail-not-sent').addClass('visible')
     setTimeout(function(){$('.mail-not-sent').removeClass('visible') }, 5000);
@@ -118,7 +118,7 @@ function scrollToTop() {
     behavior: "smooth"
   })
 }
-scrollToTopBtn.addEventListener("click", scrollToTop)
+// scrollToTopBtn.addEventListener("click", scrollToTop)
 
 //show project modal
 $(document).ready(function(){
@@ -134,46 +134,3 @@ $(document).ready(function(){
 var date = new Date();
 var year = date.getFullYear();
 document.getElementById('year').innerHTML=year;
-
-var ctx = document.getElementById('myChart').getContext('2d');
-Chart.defaults.global.defaultFontColor = 'rgb(200,200,200)';
-Chart.defaults.global.defaultFontSize = 13;
-
-var myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-      labels: ['Mobile app design ', 'Web app design',  'Graphics design', 'UI/UX design'],
-      datasets: [{
-          label: 'My skills',
-          data: [90, 80, 50, 70,],
-          barPercentage: 1,
-          barThickness: 90,
-          maxBarThickness: 100,
-          minBarThickness:2,
-          minBarLength: 2,
-          backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(54, 162, 235, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(75, 192, 192, 0.2)',
-          ],
-          borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)',
-          ],
-          borderWidth: 1
-      }],
-
-  },
-  options: {
-      scales: {
-          yAxes: [{
-              ticks: {
-                  beginAtZero: true
-              }
-          }]
-      }
-  }
-});

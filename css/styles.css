@@ -811,13 +811,13 @@ width: 50%;
 
 .contact .contacts{
     margin: 3%;
-    width: 400px;
+    width: 300px;
     font-size: 30px;
     color: rgb(77, 76, 76);
 }
-.contact .contacts i{
+.contact .contacts .fa{
     color: rgb(188, 175, 69);
-    font-size: 100;
+
     margin-right: 10px;
 }
 
