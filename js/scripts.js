@@ -81,10 +81,10 @@ function submitForm(e){
   let message = document.querySelector('.message').value;
 
   Email.send({
-    Host: 'smtp.gmail.com',
-    Username: 'lebrightdesigns@gmail.com',
-    Password: 'xqsvipwybjupxeha',
-    To: 'lebrightdesigns@gmail.com',
+    Host: process.env.EMAIL_HOST,
+    Username: process.env.EMAIL_USERNAME,
+    Password: process.env.EMAIL_PASSWORD,
+    To: process.env.EMAIL_USERNAME,
     From: email,
     Subject: `${name} has sent you a message from your portfolio`,
     Body: ` ${message}`,
