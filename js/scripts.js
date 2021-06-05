@@ -3,6 +3,15 @@ setTimeout(function(){
   $('.loader-bg').fadeToggle();
 },1500);
 
+$(document).bind("contextmenu",function(e) {
+  e.preventDefault();
+ });
+ $(document).keydown(function(e){
+     if(e.which === 123){
+        return false;
+     }
+ });
+
 $(document).ready(function(){
     $(window).scroll(function(){
 
@@ -20,6 +29,7 @@ $(document).ready(function(){
       //sticky nav
         if(this.scrollY > 20){
             scrollIndication();
+  
             $('.navbar').addClass('sticky');
             $('.progress-container').css("display","block");
             $('.progress-bar').css("display","block");
@@ -45,32 +55,8 @@ function scrollIndication() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
+    document.getElementById("scroll-indicator").style.width = scrolled + "%";
   }
-
-//swiper
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-
-
 //contact form submission
 document.querySelector('.contact-form').addEventListener('submit',submitForm);
 function submitForm(e){
@@ -122,11 +108,14 @@ function scrollToTop() {
 
 //show project modal
 $(document).ready(function(){
-  $(".view-project").click(function(){
-    $(".modal-bg").animate({top: '0'},800);
+  $(".related-work").click(function(){
+    $(".modal-bg").animate({top: '0'},500);
+    $(".navbar").addClass("navbar-hidden")
+    
   });
   $(".close").click(function(){
-    $(".modal-bg").animate({top: '-100%'},600);
+    $(".modal-bg").animate({top: '-100%'},500);
+    $(".navbar").removeClass("navbar-hidden")
   });
 
 });
