@@ -1,0 +1,165 @@
+.skills{
+    color:white;
+    background-color: rgba(188, 175, 69,0.2);
+    border-bottom: 1px solid rgba(188, 175, 69,0.5);
+ }
+ .skills .title::after{
+    content: 'what I can do';
+    background: rgb(0, 0, 0);
+
+}
+.skills{
+    color:white;
+    background-color: rgba(188, 175, 69,0.2);
+    border-bottom: 1px solid rgba(188, 175, 69,0.5);
+}
+.skills .title::before{
+    background: white;
+  }
+  .skills .title::after{
+     background: rgb(20, 20, 20);
+     content:'what i do'
+  }
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.single-chart {
+    width: 300PX;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+  .single-chart .technology-header{
+    padding:5px;
+    border-radius: 10px;
+    font-size: 13px;
+    color:rgb(255, 255, 255);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .single-chart .technologies{
+     padding:30px;
+     height: 200px;
+  }
+
+  .single-chart .technologies p{
+    /* border-left: 2px solid rgba(247, 228, 90, 0.7); */
+    
+    padding: 5px;
+ }
+
+
+.technologies p #framework{
+    color:rgba(206, 203, 7,0.5);
+
+}
+.technologies p #lang{
+    color:rgba(206, 203, 7,0.5);
+    
+}
+.technologies p #tool{
+    color:rgba(206, 203, 7,0.5);
+}
+
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: rgba(0,0,0,0.5);
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: rgba(247, 228, 90, 0.7);
+  }
+  
+  .circular-chart.green .circle {
+    stroke: rgba(247, 228, 90, 0.7);
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: rgba(247, 228, 90, 0.7);
+  }
+  
+  .percentage {
+    fill: rgb(207, 207, 207);
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+
+.modal-bg{
+    position: fixed;
+    z-index: 1;
+    width:100vw;
+    height:100vh;
+    top:0;
+    bottom:0;
+    background-color: rgb(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-100%
+}
+.modal{
+    overflow-y: hidden;
+    z-index: 1;
+    background-color: rgb(0,0,0,0.9);
+    width:100%;
+    position: absolute;
+    height:100%;
+    overflow-y: scroll;
+}
+.modal .title{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+   
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0,0,0,0.9);
+    z-index: 1;
+}
+.modal .title{
+    margin:10px;
+    font-size: 20px;
+}
+.modal .close{
+    float: right;
+    width: 60px;
+    padding:20px;
+   
+}
+.modal .close:hover{
+    cursor: pointer;
+}

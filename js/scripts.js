@@ -52,6 +52,8 @@ $(document).ready(function(){
 
 //scroll indicator
 function scrollIndication() {
+  var hori = document.documentElement.scrollLeft;
+  console.log(hori)
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
@@ -104,6 +106,13 @@ function scrollToTop() {
     behavior: "smooth"
   })
 }
+
+var projectScroll = document.getElementById('projects-list');
+projectScroll.addEventListener("scroll", (event) => {
+    console.log(projectScroll.scrollLeft)
+
+});
+
 // scrollToTopBtn.addEventListener("click", scrollToTop)
 
 //show project modal
