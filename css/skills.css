@@ -4,7 +4,7 @@
     border-bottom: 1px solid rgba(188, 175, 69,0.5);
  }
  .skills .title::after{
-    content: 'what I can do';
+    content: 'what we do';
     background: rgb(0, 0, 0);
 
 }
@@ -18,7 +18,7 @@
   }
   .skills .title::after{
      background: rgb(20, 20, 20);
-     content:'what i do'
+     content:'what we do'
   }
 .skills .skills-content{
     display: flex;

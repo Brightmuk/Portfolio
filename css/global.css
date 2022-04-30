@@ -453,9 +453,9 @@ footer .footer-trailing{
     padding-left:30px;
     opacity: 0.7;
 }
-/* .footer-trailing img{
-    width: 20vh;
-} */
+.footer-trailing img{
+    width: 30vh;
+}
 footer .fa-angle-double-up{
     color: white;
     transition: 0.5s;
