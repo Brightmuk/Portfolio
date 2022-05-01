@@ -107,11 +107,6 @@ function scrollToTop() {
   })
 }
 
-var projectScroll = document.getElementById('projects-list');
-projectScroll.addEventListener("scroll", (event) => {
-    console.log(projectScroll.scrollLeft)
-
-});
 
 // scrollToTopBtn.addEventListener("click", scrollToTop)
 
