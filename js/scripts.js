@@ -79,7 +79,10 @@ function submitForm(e){
 
   }).then((message)=>{
     showAlert(message);
-  })
+  }).catch((e)=>{
+    console.log(e)
+    showAlert('Your message was not sent!');
+  });
 }
 
 //show message sent alert

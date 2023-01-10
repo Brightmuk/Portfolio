@@ -235,18 +235,18 @@ section .title::after{
     position: absolute;
    top:115px;
    margin-left:90px;
-   opacity: 0.8;
+   opacity: 0;
    width:300px;
 }
 .cog-wheels-1pt .cog-five{
-    opacity: 0.8;
+    opacity: 0;
    top:130px;
    margin-left:323px;
    position: absolute;
    width:600px;
 }
 .cog-wheels-1pt .cog-six{
-    opacity: 0.8;
+    opacity: 0;
    top:440px;
    margin-left:860px;
    position: absolute;
@@ -255,26 +255,27 @@ section .title::after{
 /* third layer of cog wheels */
 .cog-wheels-1pt .cog-seven{
     position: absolute;
+   
    top:151px;
-   opacity: 0.3;
+   opacity: 0.8;
    width:600px;
-   animation: cog-rotate  linear infinite 64s;
+   animation: cog-rotate  linear infinite 32s;
 }
 .cog-wheels-1pt .cog-eight{
-    opacity: 0.3;
+    opacity: 1;
    top:53px;
    margin-left:475px;
    position: absolute;
    width:300px;
-   animation: cog-rotate  linear infinite reverse 32s;
+   animation: cog-rotate  linear infinite reverse 16s;
 }
 .cog-wheels-1pt .cog-nine{
-    opacity: 0.3;
+    opacity: 0.8;
    top:151px;
    margin-left:650px;
    position: absolute;
    width:600px;
-   animation: cog-rotate  linear infinite 64s;
+   animation: cog-rotate  linear infinite 32s;
 }
 
 /* 3pt for small screen */
