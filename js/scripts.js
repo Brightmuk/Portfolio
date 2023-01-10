@@ -74,7 +74,7 @@ function submitForm(e){
     Password: process.env.EMAIL_PASSWORD,
     To: process.env.EMAIL_USERNAME,
     From: email,
-    Subject: `${name} has sent you a message from your portfolio`,
+    Subject: `${name} has sent you a message from the portfolio`,
     Body: ` ${message}`,
 
   }).then((message)=>{
