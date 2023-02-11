@@ -235,18 +235,18 @@ section .title::after{
     position: absolute;
    top:115px;
    margin-left:90px;
-   opacity: 0;
+   opacity: 0.6;
    width:300px;
 }
 .cog-wheels-1pt .cog-five{
-    opacity: 0;
+    opacity: 0.6;
    top:130px;
    margin-left:323px;
    position: absolute;
    width:600px;
 }
 .cog-wheels-1pt .cog-six{
-    opacity: 0;
+    opacity: 0.6;
    top:440px;
    margin-left:860px;
    position: absolute;
