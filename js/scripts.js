@@ -13,6 +13,7 @@ $(document).bind("contextmenu",function(e) {
  });
 
 $(document).ready(function(){
+  // readTheme();
     $(window).scroll(function(){
 
       const distance = window.pageYOffset;
@@ -127,6 +128,79 @@ $(document).ready(function(){
 
 });
 
+//theme control
+// document.getElementById("theme-switch").addEventListener("click", changeTheme);
+
+function changeTheme(){
+
+var cookie = decodeURIComponent(document.cookie).split(';');
+
+var isDarkTheme = cookie.includes('darktheme');
+console.log(cookie)
+console.log(isDarkTheme);
+
+var darkThemeData = {
+  primaryTextColor: "white",
+  secondaryTextColor:"rgb(188, 175, 69)",
+  backgroundColor:"black",
+}
+
+var lightThemeData = {
+  primaryTextColor: "black",
+  secondaryTextColor:"grey",
+  backgroundColor:"#DDD1C7",
+}
+if(!isDarkTheme){
+  document.cookie = "darktheme";
+}else{
+  document.cookie = "lighttheme";
+}
+
+document.getElementById('cogs').style.backgroundColor = !isDarkTheme?darkThemeData.backgroundColor:lightThemeData.backgroundColor;
+var btns = document.getElementsByClassName("btn");
+for(var i=0;i<btns.length;i++){
+  btns[i].classList.remove(isDarkTheme?'btn-dark':'btn-light');
+  btns[i].classList.add(isDarkTheme?'btn-light':'btn-dark');
+}
+}
+
+function readTheme(){
+  var cookie = decodeURIComponent(document.cookie).split(';');
+
+  var isDarkTheme = cookie.includes('darktheme');
+
+  var darkThemeData = {
+    primaryTextColor: "white",
+    secondaryTextColor:"rgb(188, 175, 69)",
+    backgroundColor:"black",
+  }
+
+  var lightThemeData = {
+    primaryTextColor: "black",
+    secondaryTextColor:"grey",
+    backgroundColor:"#DDD1C7",
+  }
+  console.log('Going dark theme... ', isDarkTheme)
+  document.getElementById('cogs').style.backgroundColor = isDarkTheme?darkThemeData.backgroundColor:lightThemeData.backgroundColor
+  var btns = document.getElementsByClassName("btn");
+  for(var i=0;i<btns.length;i++){
+    btns[i].classList.remove(isDarkTheme?'btn-light':'btn-dark');
+    btns[i].classList.add(isDarkTheme?'btn-dark':'btn-light');
+  }
+}
+
 var date = new Date();
 var year = date.getFullYear();
 document.getElementById('year').innerHTML=year;
+
+//splide
+document.addEventListener( 'DOMContentLoaded', function() {
+  var splide = new Splide( '#projects', {
+  type    : 'loop',
+  perPage : 1,
+  interval:6000,
+  autoplay: true,
+  autoWidth: true,
+  });
+  splide.mount();
+  } );

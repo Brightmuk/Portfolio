@@ -29,13 +29,22 @@
 .project-info{
     width: 40vw;
     
-    justify-content: space-between;
+    
 }
 .project-info h1{
     color:rgba(188, 175, 69,1);
     padding-bottom: 40px;
-    text-align: center;
     font-weight: 300;
+}
+.project-info .dates{
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(148, 148, 148);
+    padding-bottom: 10px;
+}
+.project-info .platform, .fa{
+    color: rgb(153, 146, 94);
+    font-size: 17px;
 }
 .project-info p{
     padding-bottom: 40px;
@@ -43,13 +52,46 @@
     color: rgb(241, 241, 241);
     margin-bottom:10px;
 }
+.project-info .owner{
+    display: flex;
+}
+.project-info .owner img{
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+
+    margin-right: 20px;
+}
+.project-info .owner-info p{
+    font-size: 15px;
+    color: rgb(165, 165, 165);
+}
+.project-info .owner h4 span{
+    color: rgb(167, 161, 118);
+}
 .btn-row{
     display:flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100px;
+    align-items: center;
+   
+}
+.btn-row img{
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(188, 175, 69,0.5);
     
 }
-.btn{
-    width: 20px;
+.btn-row .btn{
+    width: 150px; 
+    margin:0; 
+    height: 50px;  
+    margin-right: 10px;
+    border-radius: 5px;
+    align-content: center;
+    border: 1px solid rgba(188, 175, 69,0.5);
 }
 
  /* resposiveness styling */
@@ -65,7 +107,7 @@
     
     }
     .project-info{
-        width: auto;
+        width: 90vw;
         
         justify-content: space-between;
     }

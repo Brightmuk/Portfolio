@@ -13,14 +13,19 @@
     <link rel="stylesheet" href="css/global.css">
     <script src="https://use.fontawesome.com/865859c31f.js"></script>
   <!-- swiper cdn start here -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <link href="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  " rel="stylesheet">
   <!-- swiper cdn ends here -->
 
 </head>
-<body >
+<body id="body">
+  <!-- <div id="theme-switch">
+    <i class="fa fa-moon-o" aria-hidden="true"></i>
+  </div> -->
   <!-- pre loader -->
 <div class="loader-bg">
   <div class="loader">
@@ -65,7 +70,7 @@
           </div>
     </div>
 <!-- cog wheels background -->
-<div class="cog-wheels-background">
+<div class="cog-wheels-background" id="cogs">
   <div class="max-width">
     
     <div class="cog-wheels-1pt">
@@ -111,7 +116,7 @@
                for a no average<span id="designer"> Designer</span><br>
               </div>
               <br>
-            <a href="#contact" class="btn1 ">Lets talk</a>
+            <a href="#contact" class="btn btn-dark">Lets talk</a>
           </div>
 
         </div>
@@ -257,49 +262,105 @@
       </section>
 
         <!-- projects section starts here -->
-        <section class="projects" id="projects">
-          <h2 class="title">Featured Projects</h2>                 
-     
-              <div class="project" id="sakahapa"> 
+        <section class="projects splide" id="projects">
+          <h2 class="title">Featured Projects</h2>    
+
+          <div class="splide__track brand-slideshow">
+            <div class="splide__list ">
+
+              <div class="project splide__slide" id="sakahapa"> 
                 <img src="images/projects/sakahapa-images.png">
                 <div class="project-info">
                   <h1>SAKAHAPA</h1>
-                  <p>SakaHapa s a sourcing App where a buyer can specify the kind of product, he/she is looking to purchase and any seller within a 40km radius that has the same item or something similar to it can respond with a picture and price...</p>
+                  <p class="dates">2020 June - 2021 January</p>
+
+                  <p class="platform"><i class=" fa fa-cogs" aria-hidden="true"></i> Website, Android, IOS__</p>
+
+                  <p>SakaHapa is a sourcing App where a buyer can specify the kind of product, he/she is looking to purchase and any seller within a 40km radius that 
+                    has the same item or something similar to it can respond with a picture and price...</p>
+                    <div class="owner">
+                      <img src="images/icon-person.png" alt="">
+                      <div class="owner-info">
+                        <h4>Michael Mayieko <span>- Founder SakaHapa</span></h4>
+                        <p>Working with Bright was a good experience</p>
+                      </div>
+                     
+                    </div>
                   <div class="btn-row">
-                    <a href="https://sakahapa.com" target="blank" class="btn1">WEBSITE</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.sakahapa.sakaHapa" target="blank" class="btn1">PLAY STORE</a>
-                    <a href="https://apps.apple.com/app/id1545306922" target="blank" class="btn1">APP STORE</a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.sakahapa.sakaHapa" target="blank" class="">
+                      <img src="images/playstore.png" alt="">
+                    </a>
+                    <a href="https://apps.apple.com/app/id1545306922" target="blank" class="">
+                      <img src="images/app-store.png" alt="">
+                    </a>
+                    <a href="https://sakahapa.com" target="blank" class="btn"><i class="fa fa-link" aria-hidden="true"></i> View website </i></a>
                   </div>
                   
                 </div>
               </div>
-              <div class="project" id="rush"> 
+              <div class="project splide__slide" id="rush"> 
                
-                <div class="project-info">
-                  <h1>RUSH USER</h1>
-                  <p>Package delivery made digitally easier!
-                    Bid farewell to all kinds of limits from package deliverers as you can use a cool new courier delivery and tracking app – WecanRush!
-                    Running an offline or online business and need to deliver packages to your customers?...</p>
-                  <div class="btn-row">
-                    <a href="https://wecanrush.com" target="blank" class="btn1">WEBSITE</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.wecanrush.rushuser" target="blank" class="btn1">PLAY STORE</a>
-                    <a href="https://apps.apple.com/app/id1557051580" target="blank" class="btn1">APP STORE</a>
+                  <img src="images/projects/rush-images.png">
+                  <div class="project-info">
+                    <h1>RUSH USER</h1>
+                    
+                    <p class="dates">2021 February - 2022 November</p>
+                    
+                    <p class="platform"><i class=" fa fa-cogs" aria-hidden="true"></i> Android, IOS__</p>
+
+                    <p>Package delivery made digitally easier!
+                      Bid farewell to all kinds of limits from package deliverers as you can use a cool new courier delivery and tracking app – WecanRush!
+                      Running an offline or online business and need to deliver packages to your customers?...</p>
+                      <div class="owner">
+                        <img src="images/icon-person.png" alt="">
+                        <div class="owner-info">
+                          <h4>Paul Ritzy <span>- CTO Ritzy Technologies</span></h4>
+                          <p>Working with Bright was a good experience</p>
+                        </div>
+                        
+                      </div>
+                    <div class="btn-row">
+                      
+                      <a href="https://play.google.com/store/apps/details?id=com.wecanrush.rushuser" target="blank" >
+                        <img src="images/playstore.png" alt="">
+                      </a>
+                      <a href="https://apps.apple.com/app/id1557051580" target="blank">
+                        <img src="images/app-store.png" alt="">
+                      </a>
+                      <a href="https://wecanrush.com" target="blank" class="btn"><i class="fa fa-link" aria-hidden="true"></i> View website </i></a>
+                    </div>
                   </div>
+
                   
                 </div>
-                <img src="images/projects/rush-images.png">
-              </div>
-              <div class="project" id="eb"> 
+                
+              
+              <div class="project splide__slide" id="eb"> 
                 <img src="images/projects/eb-images.png">
                 <div class="project-info">
                   <h1>EXPENDITURE BUDDY</h1>
+                  <p class="dates">2022 April - 2022 August</p>
+
+                  <p class="platform"><i class=" fa fa-cogs" aria-hidden="true"></i> Android__</p>
+
+                  
                   <p>Expenditure Buddy is a mobile app that helps you manage your future expenses at a minimal level by use of spending plans, wish lists and reminders.  The app can be used by anyone and is free to download from the Google Play store. No signing up is needed. Once you download the app you are good to go.  
                     some of the key functionalities are</p>
+                    <div class="owner-info">
+                      
+                      <p>This is a personal project</p>
+                    </div>
+
                   <div class="btn-row">
-                    <a href="https://play.google.com/store/apps/details?id=com.brightdesigns.expenditurebuddy" target="blank" class="btn1">PLAY STORE</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.brightdesigns.expenditurebuddy" target="blank" >
+                      <img src="images/playstore.png" alt="">
+                    </a>
                   </div>
                   
                 </div>
+              </div>
+              </div>
               </div>
 
 
@@ -344,7 +405,7 @@
                 <label for="message">Subject</label>
                 <textarea class="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
             
-                <input type="submit" value="SUBMIT" class="btn1">
+                <input type="submit" value="SUBMIT" class="btn btn-dark">
                 <br>
                 <div class="alert mail-sent">Your message has been sent !</div>
                 <div class="alert mail-not-sent">Your message was not sent, please try again.</div>
@@ -387,10 +448,12 @@
       </footer>
 
 </body>
+
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
 <Script src="js/scripts.js"></Script>
+
 </html>
