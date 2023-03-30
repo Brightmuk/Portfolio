@@ -9,7 +9,7 @@
 }
 
 .about h2::after{
-    content: 'who are we';
+    content: 'who I am';
 }
 .about .about-content{
     display: flex;

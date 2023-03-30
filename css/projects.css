@@ -1,7 +1,7 @@
 .projects{
     background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid rgba(188, 175, 69,0.7);
-   
+    
 }
 
 
@@ -19,7 +19,7 @@
     justify-content: space-around;
     min-width: 100%;
     margin-top:50px;
-    height: 100vh;
+    height: auto;
     scroll-snap-align: start;
 
 }
