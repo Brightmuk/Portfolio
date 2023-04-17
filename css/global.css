@@ -71,7 +71,7 @@ html{
 .header{
     position: fixed;
     width:100%;
-    z-index: 1;
+    z-index: 1000;
 }
 .navbar{
     background-image: linear-gradient(to bottom, rgb(0,0,0,0.5) , rgb(0,0,0,0));
