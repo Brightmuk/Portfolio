@@ -219,7 +219,7 @@ section .title::after{
 
 /* cog wheels background */
 .cog-wheels-background{
-    background-color: black;
+    background-color: rgb(41, 41, 41);
     z-index: -1; 
     position: fixed;
     height: 100vh;
