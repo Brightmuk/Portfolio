@@ -74,7 +74,7 @@ html{
     z-index: 1000;
 }
 .navbar{
-    background-image: linear-gradient(to bottom, rgb(0,0,0,0.5) , rgb(0,0,0,0));
+    background-image: linear-gradient(to bottom, rgb(0,0,0,0.7) , rgb(0,0,0,0));
     padding:30px 30px;
     width: 100%;
     z-index: 1;
@@ -95,7 +95,7 @@ html{
 .navbar.sticky{
     padding:10px 30px;
     z-index: 1;
-   background: rgb(0,0,0,0.9);
+   /* background: rgb(0,0,0,0.9); */
 }
 
 .max-width{
