@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass</title>
+</head>
+<body>
+    <Button onclick="enterAssignemnts()">Enter assignemnts</Button>
+</body>
+<script>
+    var papers = ['Enter assignment 1 marks for student: ','Enter assignment 2 marks for student: ','Enter CAT marks for student: ','Enter exam marks 1 for student: ']
+    function enterAssignemnts(){
+        for(var i=1;i<20;i++){
+            for(var j=0;j<papers.length;j++){
+                var input = prompt(papers[j]+i);
+                var pattern = /^[0-9]+$/;
+                if(!pattern.test(input)){
+                    alert('Enter a valid number');
+                };
+            }
+            
+        }
+    }
+   
+
+</script>
+</html>
