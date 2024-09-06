@@ -112,7 +112,7 @@ export function defaultTime(){
         'second':digitMap[0],
         'third':digitMap[0],
         'fourth':digitMap[0],
-        'fifth':digitMap[0],
-        'sixth':digitMap[0]
+        'fifth':digitMap[8],
+        'sixth':digitMap[8]
     }
 }
