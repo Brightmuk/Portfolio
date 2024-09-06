@@ -1,95 +1,85 @@
-import { useEffect, useState } from 'react';
 import './App.css';
-import { currentDigitalTime, defaultTime } from './DigitTimeAlgorithim';
-import Bottom from './svg/bottom';
-import BottomLeft from './svg/bottom-left';
-import BottomRight from './svg/bottom-right';
-import Center from './svg/center';
-import Top from './svg/top';
-import TopLeft from './svg/top-left';
-import TopRight from './svg/top-right';
+import Clock from './Clock';
+import React, { useRef, useEffect, useState } from 'react';
 
 function App() {
-  const[ time, SetTime] = useState(defaultTime());
+  const scrollContainerRef = useRef(null);
+  const scrollPageRef = useRef(null);
+  const [currentDiv, setCurrentDiv] = useState(1);
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const scrollToDiv = (index) => {
+
+    if (scrollContainerRef.current) {
+      const scrollDiv = scrollContainerRef.current.children[index];
+      scrollDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+    setCurrentDiv(index)
+  };
+
+  const scrollToPage = (index) => {
+
+    if (scrollContainerRef.current) {
+      const scrollPage = scrollPageRef.current.children[index];
+      scrollPage.scrollIntoView({ behavior: 'smooth' });
+    }
+    setCurrentPage(index)
+  };
+
 
   useEffect(() => {
-    
-    const interval = setInterval(() => {
-      
-      var digitalValue = currentDigitalTime();
-      SetTime(digitalValue)
-      
-    }, 1000);
+    scrollToDiv(1);
+  }, []);
 
-    return () => clearInterval(interval);
+  useEffect(() => {
+    const preventScroll = (e) => e.preventDefault();
+
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.addEventListener('scroll', preventScroll, { passive: false });
+    }
+    const pager = scrollPageRef.current;
+    if (pager) {
+      pager.addEventListener('scroll', preventScroll, { passive: false });
+    }
+
+    return () => {
+      if (container) {
+        container.removeEventListener('scroll', preventScroll);
+      }
+      if (pager) {
+        pager.removeEventListener('scroll', preventScroll);
+      }
+    };
+
   }, []);
 
   return (
     <div className="App">
-     <div className='clock'>
-      <div id="first" className='digit'>
-        <Top on={time.first['top']}/>
-        <TopLeft on={time.first['top-left']} className='bit'/>
-        <TopRight on={time.first['top-right']} className='bit'/>
-        <Center on={time.first['center']} className='bit'/>
-        <BottomLeft on={time.first['bottom-left']} className='bit'/>
-        <BottomRight on={time.first['bottom-right']} className='bit'/>
-        <Bottom on={time.first['bottom']} className='bit'/>
+
+      <div className="scroll-container" ref={scrollPageRef}>
+        <div className="scroll-div" >
+          <div className="scroll-container" ref={scrollContainerRef}>
+            <div className="scroll-div" >First Div</div>
+            <div className="scroll-div" ><Clock /></div>
+            <div className="scroll-div" >Last Div</div>
+          </div></div>
+        <div className="scroll-div" >Second Page</div>
+        <div className="scroll-div" >Third Page</div>
+        <div className="scroll-div" >Fourth Page</div>
       </div>
-      <div id="second" className='digit'>
-        <Top on={time.second['top']}/>
-        <TopLeft on={time.second['top-left']} className='bit'/>
-        <TopRight on={time.second['top-right']} className='bit'/>
-        <Center on={time.second['center']} className='bit'/>
-        <BottomLeft on={time.second['bottom-left']} className='bit'/>
-        <BottomRight on={time.second['bottom-right']} className='bit'/>
-        <Bottom on={time.second['bottom']} className='bit'/>
+
+      <div className="time-buttons">
+        <button onClick={() => scrollToDiv(0)} style={{ opacity: currentDiv == 0 ? 1 : 0.3, fontSize: currentDiv == 0 ? 16 : 12 }}>PAST</button>
+        <button onClick={() => scrollToDiv(1)} style={{ opacity: currentDiv == 1 ? 1 : 0.3, fontSize: currentDiv == 1 ? 16 : 12 }}>PRESENT</button>
+        <button onClick={() => scrollToDiv(2)} style={{ opacity: currentDiv == 2 ? 1 : 0.3, fontSize: currentDiv == 2 ? 16 : 12 }}>FUTURE</button>
       </div>
-      <div className='colon'>
-        <div className='box'></div>
-        <div className='box'></div>
+      <div className="nav-buttons">
+        <button onClick={() => scrollToPage(0)} style={{ opacity: currentPage == 0 ? 1 : 0.3, fontSize: currentPage == 0 ? 16 : 12 }}>HOME</button>
+        <button onClick={() => scrollToPage(1)} style={{ opacity: currentPage == 1 ? 1 : 0.3, fontSize: currentPage == 1 ? 16 : 12 }}>SKILLS</button>
+        <button onClick={() => scrollToPage(2)} style={{ opacity: currentPage == 2 ? 1 : 0.3, fontSize: currentPage == 2 ? 16 : 12 }}>PROJECTS</button>
+        <button onClick={() => scrollToPage(3)} style={{ opacity: currentPage == 3 ? 1 : 0.3, fontSize: currentPage == 3 ? 16 : 12 }}>CONTACT</button>
       </div>
-      <div id="third" className='digit'>
-        <Top on={time.third['top']}/>
-        <TopLeft on={time.third['top-left']} className='bit'/>
-        <TopRight on={time.third['top-right']} className='bit'/>
-        <Center on={time.third['center']} className='bit'/>
-        <BottomLeft on={time.third['bottom-left']} className='bit'/>
-        <BottomRight on={time.third['bottom-right']} className='bit'/>
-        <Bottom on={time.third['bottom']} className='bit'/>
-      </div>
-      <div id="fourth" className='digit'>
-        <Top on={time.fourth['top']}/>
-        <TopLeft on={time.fourth['top-left']} className='bit'/>
-        <TopRight on={time.fourth['top-right']} className='bit'/>
-        <Center on={time.fourth['center']} className='bit'/>
-        <BottomLeft on={time.fourth['bottom-left']} className='bit'/>
-        <BottomRight on={time.fourth['bottom-right']} className='bit'/>
-        <Bottom on={time.fourth['bottom']} className='bit'/>
-      </div>
-      <div className='colon'>
-        <div className='box'></div>
-        <div className='box'></div>
-      </div>
-      <div id="fifth" className='digit'>
-        <Top on={time.fifth['top']}/>
-        <TopLeft on={time.fifth['top-left']} className='bit'/>
-        <TopRight on={time.fifth['top-right']} className='bit'/>
-        <Center on={time.fifth['center']} className='bit'/>
-        <BottomLeft on={time.fifth['bottom-left']} className='bit'/>
-        <BottomRight on={time.fifth['bottom-right']} className='bit'/>
-        <Bottom on={time.fifth['bottom']} className='bit'/>
-      </div>
-      <div id="sixth" className='digit'>
-        <Top on={time.sixth['top']}/>
-        <TopLeft on={time.sixth['top-left']} className='bit'/>
-        <TopRight on={time.sixth['top-right']} className='bit'/>
-        <Center on={time.sixth['center']} className='bit'/>
-        <BottomLeft on={time.sixth['bottom-left']} className='bit'/>
-        <BottomRight on={time.sixth['bottom-right']} className='bit'/>
-        <Bottom on={time.sixth['bottom']} className='bit'/>
-      </div>
-     </div>
     </div>
   );
 }

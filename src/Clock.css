@@ -1,0 +1,206 @@
+.clock {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(175, 175, 175, 0.1);
+    display: flex;
+  }
+  
+  .digit {
+    position: relative;
+    height: 200px;
+    width: 100px;
+    margin: 0 10px;
+  }
+  
+  .bit {
+    position: absolute;
+  }
+  
+  .top {
+    left: 5px;
+    width: 91px;
+    height: 23px;
+  }
+  
+  .top-left {
+    left: 0px;
+    top:1px;
+    width: 23px;
+    height: 91px;
+  }
+  
+  .top-right {
+    right: 0px;
+    top:2px;
+    width: 23px;
+    height: 91px;
+  }
+  
+  .center {
+    top: 80px;
+    left: 4px;
+    width: 91px;
+    height: 23px;
+  }
+  
+  .bottom-left {
+    left: 0;
+    top: 90px;
+    width: 23px;
+    height: 91px;
+  }
+  
+  .bottom-right {
+    right: 0;
+    top: 90px;
+    width: 23px;
+    height: 91px
+  }
+  
+  .bottom {
+    bottom: 17px;
+    left: 4px;
+    width: 91px;
+    height: 23px
+  }
+  
+  .colon {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .colon .box {
+    width: 20px;
+    height: 20px;
+    background-color: #e85d04;
+  }
+  @media (max-width:900px){
+    .digit {
+      height: 120px;
+      width: 60px;
+      margin: 0 10px;
+    }
+    
+    .top {
+      left: 5px;
+      width: 51px;
+      height: 13px;
+    }
+    
+    .top-left {
+      left: 0px;
+      top:1px;
+      width: 14px;
+      height: 48px;
+    }
+    
+    .top-right {
+      right: 0px;
+      top:2px;
+      width: 14px;
+      height: 48px;
+    }
+    
+    .center {
+      top: 43px;
+      left: 8px;
+      width: 44px;
+      height: 13px;
+    }
+    
+    .bottom-left {
+      left: 0;
+      top: 50px;
+      width: 14px;
+      height: 48px;
+    }
+    
+    .bottom-right {
+      right: 0;
+      top: 50px;
+      width: 14px;
+      height: 48px
+    }
+    
+    .bottom {
+      bottom: 20px;
+      left: 4px;
+      width: 52px;
+      height: 13px
+    }
+    
+    .colon {
+      margin: 10px;
+    }
+    
+    .colon .box {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  @media (max-width:600px){
+    .digit {
+      height: 60px;
+      width: 29px;
+      margin: 0 5px;
+    }
+    
+    .top {
+      left: 1px;
+      width: 27px;
+      height: 7px;
+    }
+    
+    .top-left {
+      left: 0px;
+      top:2px;
+      width: 7px;
+      height: 25px;
+    }
+    
+    .top-right {
+      right: 0px;
+      top:2px;
+      width: 7px;
+      height: 25px;
+    }
+    
+    .center {
+      top: 24px;
+      left: 3px;
+      width: 23px;
+      height: 7px;
+    }
+    
+    .bottom-left {
+      left: 0;
+      top: 28px;
+      width: 7px;
+      height: 24px;
+    }
+    
+    .bottom-right {
+      right: 0;
+      top: 28px;
+      width: 7px;
+      height: 24px
+    }
+    
+    .bottom {
+      bottom: 6px;
+      left: 1px;
+      width: 27px;
+      height: 7px
+    }
+    
+    .colon {
+      margin: 5px;
+    }
+    
+    .colon .box {
+      width: 10px;
+      height: 10px;
+    }
+  }
