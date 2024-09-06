@@ -1,6 +1,7 @@
 import './App.css';
 import Clock from './Clock';
 import React, { useRef, useEffect, useState } from 'react';
+import "./fonts/DS-DIGI.TTF";
 
 function App() {
   const scrollContainerRef = useRef(null);
@@ -61,7 +62,12 @@ function App() {
         <div className="scroll-div" >
           <div className="scroll-container" ref={scrollContainerRef}>
             <div className="scroll-div" >First Div</div>
-            <div className="scroll-div" ><Clock /></div>
+            <div className="scroll-div" >
+              <p >Hello, I'm Bright<br></br>A Software Developer</p>
+              <Clock />
+             <p></p>
+
+              </div>
             <div className="scroll-div" >Last Div</div>
           </div></div>
         <div className="scroll-div" >Second Page</div>
