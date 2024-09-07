@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Clock.css';
+import './css/Clock.css';
 import { currentDigitalTime, defaultTime } from './DigitTimeAlgorithim';
 import Bottom from './svg/bottom';
 import BottomLeft from './svg/bottom-left';

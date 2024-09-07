@@ -1,4 +1,4 @@
-import '../App.css';
+import '../css/App.css';
 
 export default function BottomRight(props) {
     var color = props.on?'#e85d04':'none';
