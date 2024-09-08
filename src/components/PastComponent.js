@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import '../css/Past.css';
 
 const PastContent = () => {
@@ -44,13 +44,13 @@ const PastContent = () => {
                 <div className="nav-content" ref={scrollDateRef}>
                     {[2018, 2019, 2020, '2021 - 2024'].map((year, index) => (
                         <div className='nav-section' key={index}>
-                            {index==0?<></>: <div className="vertical-line"></div>}
+                             <div className={selectedDate===index?"vertical-line top-vertical-line-selected":"vertical-line "}></div>
                             <div
                                 onClick={() => scrollToDate(index)}
                                 className={`date ${selectedDate === index ? 'selected' : ''}`}>
                                 {year}
                             </div>
-                            {index==3?<></>: <div className="vertical-line"></div>}
+                            <div className={selectedDate===index?"vertical-line bottom-vertical-line-selected":"vertical-line "}></div>
                         </div>
                     ))}
                 </div>

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import './css/Clock.css';
-import { currentDigitalTime, defaultTime } from './DigitTimeAlgorithim';
-import Bottom from './svg/bottom';
-import BottomLeft from './svg/bottom-left';
-import BottomRight from './svg/bottom-right';
-import Center from './svg/center';
-import Top from './svg/top';
-import TopLeft from './svg/top-left';
-import TopRight from './svg/top-right';
+import '../css/Clock.css';
+import { currentDigitalTime, defaultTime } from '../DigitTimeAlgorithim';
+import Bottom from '../svg/bottom';
+import BottomLeft from '../svg/bottom-left';
+import BottomRight from '../svg/bottom-right';
+import Center from '../svg/center';
+import Top from '../svg/top';
+import TopLeft from '../svg/top-left';
+import TopRight from '../svg/top-right';
 
 export default function Clock() {
     const [time, SetTime] = useState(defaultTime());
