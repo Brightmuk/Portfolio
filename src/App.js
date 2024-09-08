@@ -1,8 +1,9 @@
 import './css/App.css';
-import Clock from './Clock';
+import Clock from './components/Clock';
 import React, { useRef, useEffect, useState } from 'react';
 import "./fonts/DS-DIGI.TTF";
 import PastComponent from './components/PastComponent';
+import Footer from './components/Footer';
 
 function App() {
   const scrollContainerRef = useRef(null);
@@ -26,7 +27,7 @@ function App() {
   };
 
   useEffect(() => {
-    // scrollToDiv(1);
+    scrollToDiv(1);
   }, []);
   
 
@@ -62,6 +63,7 @@ function App() {
         <button onClick={() => scrollToPage(2)} style={{ opacity: currentPage === 2 ? 1 : 0.3, fontSize: currentPage === 2 ? 16 : 12 }}>PROJECTS</button>
         <button onClick={() => scrollToPage(3)} style={{ opacity: currentPage === 3 ? 1 : 0.3, fontSize: currentPage === 3 ? 16 : 12 }}>CONTACT</button>
       </div>
+      <Footer/>
     </div>
   );
 }

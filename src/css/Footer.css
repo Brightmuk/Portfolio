@@ -1,0 +1,26 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    padding: 20px;
+    
+    background-color: #0d1b2a;
+}
+.footer .socials{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}
+.footer .socials img{
+    height: 20px;
+}
+.footer .rights{
+    color: rgb(86, 86, 118);
+    font-size: 13px;
+    margin-top: 10px;
+}
