@@ -4,6 +4,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import "./fonts/DS-DIGI.TTF";
 import PastComponent from './components/PastComponent';
 import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 function App() {
   const scrollContainerRef = useRef(null);
@@ -48,7 +49,9 @@ function App() {
             <div className="scroll-div" >Future content</div>
           </div></div>
         <div className="scroll-div" >Second Page</div>
-        <div className="scroll-div" >Third Page</div>
+        <div className="scroll-div" >
+          <Projects/>
+        </div>
         <div className="scroll-div" >Fourth Page</div>
       </div>
 

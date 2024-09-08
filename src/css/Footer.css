@@ -18,6 +18,7 @@
 }
 .footer .socials img{
     height: 20px;
+    cursor: pointer;
 }
 .footer .rights{
     color: rgb(86, 86, 118);
