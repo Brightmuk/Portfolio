@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import '../css/Past.css';
+import Projects from './Projects';
 
 const PastContent = () => {
     const [selectedDate, setSelectedDate] = useState(0);
@@ -42,7 +43,7 @@ const PastContent = () => {
         <div className="past">
             <div className="nav">
                 <div className="nav-content" ref={scrollDateRef}>
-                    {[2018, 2019, 2020, '2021 - 2024'].map((year, index) => (
+                    {['Projects',2018, 2019, 2020, ].map((year, index) => (
                         <div className='nav-section' key={index}>
                              <div className={selectedDate===index?"vertical-line top-vertical-line-selected":"vertical-line "}></div>
                             <div
@@ -57,13 +58,21 @@ const PastContent = () => {
             </div>
 
             <div className='past-content' ref={containerRef}>
-                {['Something from 2018', 'Something from 2019', 'Something from 2020', 'Something from 2021-2024'].map(
+                {['Projects','Something from 2018', 'Something from 2019', 'Something from 2020'].map(
                     (content, index) => (
+                        content=='Projects'?
+                        <div className='past-section' 
+                        ref={(el) => (pastContentRef.current[index] = el)}
+                        key={index}>
+                            <Projects />
+                        </div>
+                       :
                         <div className='past-section'
                             ref={(el) => (pastContentRef.current[index] = el)}
                             key={index} >
                             <p>{content}</p>
                         </div>
+
                     )
                 )}
             </div>

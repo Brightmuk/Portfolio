@@ -1,12 +1,11 @@
 .projects{
-    width: 70%;
     height: 100%;
+    padding-top: 50px;
+    
 }
-.projects-content{
-    height: 70vh;
-    overflow-y: scroll;
-}
+
 .project{
+    
     position: relative;
     display: flex;
     border: 1px solid rgb(40, 40, 76);
@@ -21,6 +20,9 @@
     
 }
 .project .project-img{
+    width: 300px;
+}
+.project .project-img img{
     height: 200px;
     border-radius: 10px;
 }
@@ -52,6 +54,8 @@
     display: flex;
     font-size: 12px;
     margin-top: 20px;
+    flex-wrap: wrap;
+    
 }
 .technologies div{
     border: 1px solid rgb(67, 67, 134);
@@ -66,5 +70,27 @@
     top:20px;
     width: 25px;
     cursor: pointer;
+}
+@media(max-width:750px){
+    .projects{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .projects h3{
+        font-size: 25px;
+    }
+    .project h2{
+        font-size: 20px;
+
+     }
+     .projects-content{
+        height: 100vh;
+        
+    }
+    .project{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    } 
 }
 

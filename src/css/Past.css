@@ -59,7 +59,7 @@
     max-height: 100%; 
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    height: 60vh; 
+    
   }
   
   .past-section {
@@ -67,6 +67,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 60vh;
+    height: 100vh;
+    overflow-y: scroll;
   }
-  

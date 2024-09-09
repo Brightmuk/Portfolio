@@ -19,8 +19,10 @@ export default function Projects() {
                         <a href={project.link} target='blank'>
                         <img className='project-link' src={linkIcon} alt="Linkedin"></img>
                         </a>
+                        <div className='project-img'>
+                        <img  src={process.env.PUBLIC_URL + project.img} alt="img"></img>
+                        </div>
                         
-                        <img className='project-img' src={process.env.PUBLIC_URL + project.img} alt="img"></img>
                         <div className="project-content">
                             <h5 className="period">{project.date}</h5>
                             <h2>{project.name}</h2>
