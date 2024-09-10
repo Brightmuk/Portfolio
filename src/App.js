@@ -6,7 +6,7 @@ import PastComponent from './components/PastComponent';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
 import Future from './components/FutureComponent';
-import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './Home';
 import Contact from './Contact';
 import Privacy from './Privacy';
