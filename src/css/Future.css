@@ -1,0 +1,83 @@
+.future{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.contact{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    font-size: 80px;
+}
+.future .contact-details {
+    font-size: 15px;
+    background-color: #ce4f01;
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+.contact-details .phone , .mail{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.contact-details img{
+    width: 20px;
+    margin-right: 10px;
+   
+}
+
+.contact-form {
+    margin: 0 auto;
+    padding: 20px;
+    width: 40%;
+    border-radius: 8px;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form div {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    background-color: #e85d04;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ce4f01;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 15px;
+  }
+  

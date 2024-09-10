@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '../css/Past.css';
 import Projects from './Projects';
 
@@ -38,40 +38,67 @@ const PastContent = () => {
             inline: 'center',
         });
     };
+    useEffect(() => {
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+
+                        const index = pastContentRef.current.indexOf(entry.target);
+                        setSelectedDate(index);
+                    }
+                });
+            },
+            {
+                root: containerRef.current,
+                threshold: 0.6,
+            }
+        );
+
+        pastContentRef.current.forEach((section) => {
+            if (section) observer.observe(section);
+        });
+
+        return () => {
+
+            observer.disconnect();
+        };
+    }, []);
 
     return (
         <div className="past">
             <div className="nav">
                 <div className="nav-content" ref={scrollDateRef}>
-                    {['Projects',2018, 2019, 2020, ].map((year, index) => (
+                    {['Projects', 2018, 2019, 2020,].map((year, index) => (
                         <div className='nav-section' key={index}>
-                             <div className={selectedDate===index?"vertical-line top-vertical-line-selected":"vertical-line "}></div>
+                            <div className={selectedDate === index ? "vertical-line top-vertical-line-selected" : "vertical-line "}></div>
                             <div
                                 onClick={() => scrollToDate(index)}
                                 className={`date ${selectedDate === index ? 'selected' : ''}`}>
                                 {year}
                             </div>
-                            <div className={selectedDate===index?"vertical-line bottom-vertical-line-selected":"vertical-line "}></div>
+                            <div className={selectedDate === index ? "vertical-line bottom-vertical-line-selected" : "vertical-line "}></div>
                         </div>
                     ))}
                 </div>
             </div>
 
             <div className='past-content' ref={containerRef}>
-                {['Projects','Something from 2018', 'Something from 2019', 'Something from 2020'].map(
+                {['Projects', 'Something from 2018', 'Something from 2019', 'Something from 2020'].map(
                     (content, index) => (
-                        content=='Projects'?
-                        <div className='past-section' 
-                        ref={(el) => (pastContentRef.current[index] = el)}
-                        key={index}>
-                            <Projects />
-                        </div>
-                       :
-                        <div className='past-section'
-                            ref={(el) => (pastContentRef.current[index] = el)}
-                            key={index} >
-                            <p>{content}</p>
-                        </div>
+                        content == 'Projects' ?
+                            <div className='past-section'
+                                ref={(el) => (pastContentRef.current[index] = el)}
+                                key={index}>
+                                <Projects />
+                            </div>
+                            :
+                            <div className='past-section'
+                                ref={(el) => (pastContentRef.current[index] = el)}
+                                key={index} >
+                                <p>{content}</p>
+                            </div>
 
                     )
                 )}

@@ -1,7 +1,7 @@
 import '../css/Footer.css';
 import linkedIn from '../svg/linkedin.svg';
 import github from '../svg/github.svg';
-
+import {Link} from 'react-router-dom';
 
 export default function Footer() {
     const currentDate = new Date();
@@ -17,7 +17,7 @@ export default function Footer() {
 
             </div>
             <div className='rights'>
-                All rights © reserved Bright Mukonesi {currentDate.getFullYear()}
+                All rights © reserved Bright Mukonesi {currentDate.getFullYear()} | <Link to="/privacy" className='link'>Privacy policy</Link>
             </div>
 
         </div>

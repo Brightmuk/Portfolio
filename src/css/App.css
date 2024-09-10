@@ -52,32 +52,22 @@
 .scroll-div .hello span{
   color: #e85d04;
 }
-
+.time-traveller{
+  position: absolute; 
+  left:0;
+  display: flex;
+}
 .time-buttons {
   height: 130px;
-  width: 130px;
+  width: 140px;
  display: flex;
- position: absolute;
  justify-content: space-between;
  flex-direction: column;
- left:0;
-  margin-top: 20px;
   perspective: 600px;
-}
-.nav-buttons {
-  height: 140px;
-  width: 130px;
- display: flex;
- position: absolute;
- justify-content: space-between;
- flex-direction: column;
- right:0;
-  margin-top: 20px;
-  perspective: 600px;
-  
 }
 
-button {
+
+.time-buttons button{
   margin: 0 10px;
   padding: 10px 20px;
   font-size: 16px;
@@ -86,24 +76,21 @@ button {
   transition: 0.3s ease;
   background-color: transparent;
   font-weight: 200;
-}
-.nav-buttons button{
-  transform: rotateY(30deg);
-  transform-origin: center;
-  transform-style: preserve-3d;
-}
-.time-buttons button{
   transform: rotateY(-30deg);
   transform-origin: center;
   transform-style: preserve-3d;
+
 }
-.time-travel{
-  display: flex;
-  flex-direction: column;
-  font-size: 13px;
-  color: rgb(183, 183, 183);
-  justify-content: space-between;
-  align-items: center;
-  margin: 30px;
-  height: 50px;
+
+.time-traveller .text{
+  writing-mode: vertical-rl; 
+  text-orientation:sideways-right;
+  color: rgb(106, 106, 106);
+  padding: 10px;
+  text-align: center;
+  font-size: 8px;
+  left:30px;
+  letter-spacing:3px;
+  transform: rotate(180deg); 
+  
 }
