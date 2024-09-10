@@ -95,6 +95,21 @@
   transform: rotate(180deg); 
   
 }
+.not-found{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0d1b2a;
+  color: white;
+}
+.not-found h1{
+  color:#e85d04
+}
+.not-found .link{
+  color: rgb(71, 58, 158);
+}
 @media (max-width:600px) {
 
   .time-traveller{
