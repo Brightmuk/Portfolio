@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "digital";
+    src: local("digital"),
+        url("../fonts/DS-DIGI.TTF") format("truetype");
+    font-weight: normal;
+}
+
+h2{
+    text-align: center;
+}
+.contact {
+   
+    
+    scroll-behavior: smooth;
+    background-color: #0d1b2a;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+}
+
+.contact-content {
+    width: 70%;
+    margin: auto;
+
+    height: 100vh;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.contact-form {
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    min-height: 100px;
+}
+
+.contact-form button {
+    background-color: #e85d04;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    margin-left: 30%;
+   
+}
+
+.contact-form button:hover {
+    background-color: #ce4f01;
+}
+
+.error-message {
+    color: red;
+    font-size: 15px;
+}
+@media (max-width:700px) {
+    
+}

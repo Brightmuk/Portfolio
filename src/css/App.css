@@ -17,7 +17,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  color:white
+  color:white;
+ 
 }
 
 .scroll-container {

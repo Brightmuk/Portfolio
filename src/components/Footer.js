@@ -17,7 +17,7 @@ export default function Footer() {
 
             </div>
             <div className='rights'>
-                All rights © reserved Bright Mukonesi {currentDate.getFullYear()} | <Link to="/privacy" className='link'>Privacy policy</Link>
+                All rights © reserved Bright Mukonesi {currentDate.getFullYear()} | <Link to="/privacy" className='link'>Privacy policy</Link> | <Link to="/contact" className='link'>Contact</Link> | <Link to="/" className='link'>Home</Link> 
             </div>
 
         </div>

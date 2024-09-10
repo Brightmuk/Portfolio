@@ -33,51 +33,5 @@ h1{
    
 }
 
-.contact-form {
-    margin: 0 auto;
-    padding: 20px;
-    width: 40%;
-    border-radius: 8px;
-  }
-  
-  .contact-form h2 {
-    margin-bottom: 20px;
-  }
-  
-  .contact-form div {
-    margin-bottom: 15px;
-  }
-  
-  .contact-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .contact-form button {
-    background-color: #e85d04;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #ce4f01;
-  }
-  
-  .error-message {
-    color: red;
-    font-size: 15px;
-  }
+
   

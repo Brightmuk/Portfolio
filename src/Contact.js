@@ -1,6 +1,7 @@
-import './css/Future.css';
+import './css/Contact.css';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import Footer from './components/Footer';
 
 
 export default function Contact() {
@@ -59,9 +60,10 @@ export default function Contact() {
       };
     
       return (
-        <div className='future'>
+        <div className='contact'>
             
-           <div className='contact'>
+           <div className='contact-content'>
+            <h2>Contact us</h2>
         <div className="contact-form">
          
           {isSubmitted ? (
@@ -103,7 +105,7 @@ export default function Contact() {
           )}
         </div>
            </div>
-
+          <Footer/>
         </div>
       );
 }
