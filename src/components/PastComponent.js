@@ -87,7 +87,7 @@ const PastContent = () => {
             <div className='past-content' ref={containerRef}>
                 {['Projects', 'Something from 2018', 'Something from 2019', 'Something from 2020'].map(
                     (content, index) => (
-                        content == 'Projects' ?
+                        content === 'Projects' ?
                             <div className='past-section'
                                 ref={(el) => (pastContentRef.current[index] = el)}
                                 key={index}>
