@@ -32,6 +32,21 @@ h1{
     margin-right: 10px;
    
 }
-
+@media (max-width:800px) {
+   h1{
+    font-size: 40px;
+    }
+    .future .contact-details {
+        width: 80%;
+    }
+}
+@media (max-width:600px) {
+    .future .contact-details {
+        width: 90%;
+    }
+    h1{
+     font-size: 30px;
+     }
+ }
 
   

@@ -1,7 +1,7 @@
 .projects{
     height: 100%;
     padding-top: 50px;
-    
+
 }
 
 .project{
@@ -71,7 +71,7 @@
     width: 25px;
     cursor: pointer;
 }
-@media(max-width:750px){
+@media(max-width:850px){
     .projects{
         width: 100%;
         padding-top: 10px;
@@ -81,6 +81,7 @@
     }
     .project h2{
         font-size: 20px;
+        text-align: left;
 
      }
      .projects-content{
