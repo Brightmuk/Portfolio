@@ -1,5 +1,5 @@
 .projects{
-    height: 100%;
+    height: auto;
     padding-top: 50px;
 }
 
@@ -14,9 +14,7 @@
 }
 .project .project-content{
    padding-left: 20px;
-
-    text-align: start;
-    
+    text-align: start; 
 }
 .project .project-img{
     width: 300px;

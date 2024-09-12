@@ -85,7 +85,7 @@ const PastContent = () => {
             </div>
 
             <div className='past-content' ref={containerRef}>
-                {['Projects', 'Something from 2018', 'Something from 2019', 'Something from 2020'].map(
+                {['Projects'].map(
                     (content, index) => (
                         content === 'Projects' ?
                             <div className='past-section'

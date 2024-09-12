@@ -10,8 +10,7 @@
     background-color: #0d1b2a;
 }
 .mobile-footer{
-    display: flex;
-    font-size: 10px;
+    display: none;
 }
  .socials{
     display: flex;
@@ -48,5 +47,9 @@
 @media (max-width:600px) {
     .footer{
         display:none
+    }
+    .mobile-footer{
+        display: flex;
+        font-size: 10px;
     }
 }
