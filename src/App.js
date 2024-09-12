@@ -1,11 +1,6 @@
 import './css/App.css';
-import Clock from './components/Clock';
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import "./fonts/DS-DIGI.TTF";
-import PastComponent from './components/PastComponent';
-import Footer from './components/Footer';
-import Projects from './components/Projects';
-import Future from './components/FutureComponent';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './Home';
 import Contact from './Contact';

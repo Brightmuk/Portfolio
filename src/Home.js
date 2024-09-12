@@ -4,9 +4,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import "./fonts/DS-DIGI.TTF";
 import PastComponent from './components/PastComponent';
 import Footer, { MobileFooter } from './components/Footer';
-import Projects from './components/Projects';
 import Future from './components/FutureComponent';
-import { Link } from 'react-router-dom';
+
 
 export default function Home() {
   const scrollContainerRef = useRef(null);

@@ -21,29 +21,29 @@ function Privacy() {
             <p>This summary provides key points from our privacy notice. You can find out more details by clicking the links or using the table of contents below.</p>
 
             <ul>
-                <li><strong>What personal information do we process?</strong> We may process personal information depending on how you interact with Bright Desings. <a href="#">Learn more</a>.</li>
+                <li><strong>What personal information do we process?</strong> We may process personal information depending on how you interact with Bright Desings.</li>
                 <li><strong>Do we process any sensitive personal information?</strong> We do not process sensitive personal information.</li>
                 <li><strong>Do you receive any information from third parties?</strong> We do not receive any information from third parties.</li>
-                <li><strong>How do you process my information?</strong> We process your information to provide, improve, and administer our Services. <a href="#">Learn more</a>.</li>
-                <li><strong>In what situations and with which parties do we share personal information?</strong> We may share information with third parties. <a href="#">Learn more</a>.</li>
-                <li><strong>What are your rights?</strong> Depending on your location, privacy laws may grant you rights regarding your personal information. <a href="#">Learn more</a>.</li>
-                <li><strong>How do I exercise my rights?</strong> You can fill out our data request form or contact us directly. <a href="#">Learn more</a>.</li>
+                <li><strong>How do you process my information?</strong> We process your information to provide, improve, and administer our Services. </li>
+                <li><strong>In what situations and with which parties do we share personal information?</strong> We may share information with third parties.</li>
+                <li><strong>What are your rights?</strong> Depending on your location, privacy laws may grant you rights regarding your personal information. </li>
+                <li><strong>How do I exercise my rights?</strong> You can fill out our data request form or contact us directly. </li>
             </ul>
 
             <h3>TABLE OF CONTENTS</h3>
             <ol id="toc">
-                <li><a href="#">WHAT INFORMATION DO WE COLLECT?</a></li>
-                <li><a href="#">HOW DO WE PROCESS YOUR INFORMATION?</a></li>
-                <li><a href="#">WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</a></li>
-                <li><a href="#">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></li>
-                <li><a href="#">WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?</a></li>
-                <li><a href="#">HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
-                <li><a href="#">WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
-                <li><a href="#">CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
-                <li><a href="#">DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
-                <li><a href="#">DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
-                <li><a href="#">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
-                <li><a href="#">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
+                <li><a href="#g">WHAT INFORMATION DO WE COLLECT?</a></li>
+                <li><a href="#t">HOW DO WE PROCESS YOUR INFORMATION?</a></li>
+                <li><a href="#t">WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</a></li>
+                <li><a href="#t">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></li>
+                <li><a href="t#">WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?</a></li>
+                <li><a href="#r">HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
+                <li><a href="#r">WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
+                <li><a href="#e">CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
+                <li><a href="#re">DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
+                <li><a href="#r">DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
+                <li><a href="#w">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
+                <li><a href="#w">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
             </ol>
 
             <h3>1. WHAT INFORMATION DO WE COLLECT?</h3>
