@@ -5,8 +5,6 @@
     height: 80vh; 
     width: 70%;
   }
-  
-
   .nav-section{
     display: flex;
     align-items: center;
@@ -36,8 +34,6 @@
   
   .date.selected {
     color: rgb(255, 255, 255);
-    
-    
   }
   
   .past-content {
@@ -80,11 +76,13 @@
   .past-content{
     scroll-snap-type: none;
   }
-  .past-section{
-    height: 80vh;
-  }
-  .nav{
-    display: none;
-  }
+ .vertical-line{
+  height: 3vh;
+ }
+ .date{
+  font-size: 10px;
+  padding: 5px;
+ }
+
 
 }

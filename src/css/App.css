@@ -7,18 +7,15 @@
  html {
   scroll-behavior: smooth;
 }
-
  
 .App {
   background-color: #0d1b2a;
-  height: 100vh;
+  height:100vh;
   width: 100vw;
   justify-content: center;
   display: flex;
   flex-direction: column;
   color:white;
- 
- 
 }
 
 .scroll-container {
@@ -27,19 +24,19 @@
   overflow-y: hidden;
   scroll-snap-type: y mandatory;
   width: 100%;
-  height: 100vh;
+  height:100vh;
 }
 
 
 .scroll-div {
-  flex: 0 0 100vh;
+  flex: 0 0 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   font-size: 2rem;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -110,13 +107,25 @@
 .not-found .link{
   color: rgb(71, 58, 158);
 }
+
+
 @media (max-width:600px) {
+  .scroll-container {
+    display: flex;
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+  }
+  .time-buttons{
+    height:50px
+  }
 
   .time-traveller{
     background-color: #0d1b2a;
-      bottom: 100px;
+     padding-bottom: 3px;
+      bottom:0;
+      margin-bottom: 0;
       width: 100%;
-      height: 70px;
       display: flex;
       flex-direction: column;
   }
