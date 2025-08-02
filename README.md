@@ -1,5 +1,7 @@
 # Hello, I'm Bright
 
 ## Deploying:
-`npm run build`
-`npm run deploy`
+Build: `npm run build`
+Deploy: `npm run deploy`
+Test: `serve -s out`
+Hard regresh: 'ctr+shift+R'

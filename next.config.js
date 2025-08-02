@@ -22,7 +22,7 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   reactStrictMode: true,
   swcMinify: true,
-  trailingSlash: false,
+  trailingSlash: true,
   
 
   // DO NOT include basePath or assetPrefix for custom domain
