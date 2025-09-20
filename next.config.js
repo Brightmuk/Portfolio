@@ -1,8 +1,8 @@
 /* eslint-env node */
 
 const nextConfig = {
-  output: 'export', // Enable static export for deployment
-
+  output: 'export', 
+  assetPrefix: '/',
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
@@ -25,8 +25,6 @@ const nextConfig = {
   trailingSlash: true,
   
 
-  // DO NOT include basePath or assetPrefix for custom domain
-
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -41,6 +39,7 @@ const nextConfig = {
     ],
   },
 };
+
 
 module.exports = nextConfig;
 

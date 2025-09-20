@@ -9,16 +9,6 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import heroImage from '../images/header-background.webp';
-import profilepic from '../images/profilepic.png';
-import porfolioImage1 from '../images/project/project-1.jpg';
-import porfolioImage2 from '../images/project/project-2.jpg';
-import porfolioImage3 from '../images/project/project-3.jpg';
-import porfolioImage4 from '../images/project/project-4.jpg';
-import porfolioImage5 from '../images/project/project-5.jpg';
-import porfolioImage6 from '../images/project/project-6.jpg';
-import porfolioImage7 from '../images/project/project-7.jpg';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -60,7 +50,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
+  imageSrc: '',
   name: `I'm Tim Baker.`,
   description: (
     <>
@@ -95,7 +85,7 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
+  profileImageSrc: '/images/profilepic.png',
   description: `My journey in software development began at Moringa School, 
   where I gained a strong foundation in full-stack development. 
   Over the years, I have honed my skills in UI/UX and frontend development using 
@@ -170,43 +160,43 @@ export const projectItems: ProjectItem[] = [
     title: 'FlipIQ',
     description: 'The ultimate flashcards memorization app built with AI-powered learning',
     url: 'https://play.google.com/store/apps/details?id=com.bright.flashcards',
-    image: porfolioImage1,
+    image: '/images/project/project-1.jpg',
   },
   {
     title: 'KCA Timetables',
     description: 'Timetable viewing app for KCA University',
     url: 'https://play.google.com/store/apps/details?id=com.brightdesigns.kcatimetables',
-    image: porfolioImage2,
+    image: '/images/project/project-2.jpg',
   },
   {
     title: 'Expenditure buddy',
     description: 'Calculate your planned expenditure at ease',
     url: 'https://reactresume.com',
-    image: porfolioImage3,
+    image: '/images/project/project-3.jpg',
   },
   {
     title: 'SakaHapa',
     description: 'Where buyers saveand sellers sell more',
     url: 'https://sakahapa.com/',
-    image: porfolioImage4,
+    image: '/images/project/project-4.jpg',
   },
   {
     title: 'Wecanrush Inc',
     description: 'Wecancrush is a service that allows businesses to request courier/pickup services directly from independent contractors.',
     url: 'https://wecanrush.com/',
-    image: porfolioImage5,
+    image: '/images/project/project-5.jpg',
   },
   {
     title: 'Coming soon',
     description: 'Something amazing is under construction',
     url: 'https://brightmuk.com',
-    image: porfolioImage6,
+    image: '/images/project/project-6.jpg',
   },
   {
     title: 'Coming soon',
     description: 'Something beautiful is in creation',
     url: 'https://brightmuk.com',
-    image: porfolioImage7,
+    image: '/images/project/project-7.jpg',
   },
 
 
@@ -271,7 +261,7 @@ export const experience: TimelineItem[] = [
  * Testimonial section
  */
 export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
+  imageSrc: '',
   testimonials: [
     {
       name: 'John Doe',
