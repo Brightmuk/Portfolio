@@ -147,7 +147,7 @@ const PrivacyPolicy: React.FC = React.memo(() => {
       <p>
         If you have any questions about this Privacy Policy:
         <br />
-        By email: <a  className='text-neutral-600' href="mailto:be.rightmuk@gmail.com">be.rightmuk@gmail.com</a>
+        By email: <a  className='text-neutral-600' href="mailto:info@brightmuk.com">info@brightmuk.com</a>
         <br />
         Website: <a className='text-neutral-600' href="https://www.brightmuk.com" rel="noopener noreferrer" target="_blank">www.brightmuk.com</a>
       </p>

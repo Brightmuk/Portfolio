@@ -291,8 +291,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'be.rightmuk@gmail.com',
-      href: 'mailto:be.rightmuk@gmail.com',
+      text: 'info@brightmuk.com',
+      href: 'mailto:info@brightmuk.com',
     },
     {
       type: ContactType.Location,
