@@ -26,8 +26,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Bright Mukonesi',
+  description: "Hello, I'm Bright a Software Engineer",
 };
 
 /**
@@ -51,7 +51,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: '',
-  name: `I'm Tim Baker.`,
+  name: `I'm Bright Mukonesi`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
