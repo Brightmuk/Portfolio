@@ -166,6 +166,11 @@ export const skills: SkillGroup[] = [
         level: 5,
       },
       {
+        name: 'SQL',
+        image:'images/skills/sql.jpg',
+        level: 5,
+      },
+      {
         name: 'Figma',
         image:'images/skills/figma.jpg',
         level: 5,
