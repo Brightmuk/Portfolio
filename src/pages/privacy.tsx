@@ -12,7 +12,7 @@ const PrivacyPolicy: React.FC = React.memo(() => {
     <div className="prose prose-lg max-w-4xl px-4 py-10 mx-auto text-white dark:text-neutral-200">
       
       <h1 className="text-white text-4xl font-bold">Privacy Policy</h1>
-      <p><strong>Last updated:</strong> June 22, 2025</p>
+      <p><b>Last updated:</b> June 22, 2025</p>
 
       <p>
         This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your
@@ -25,7 +25,7 @@ const PrivacyPolicy: React.FC = React.memo(() => {
       </p>
 
       <h2  className="text-neutral-300 text-3xl font-bold">Interpretation and Definitions</h2>
-      <h3>Interpretation</h3>
+      
       <p>
         The words of which the initial letter is capitalized have meanings defined under the following conditions. The
         following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
@@ -34,18 +34,18 @@ const PrivacyPolicy: React.FC = React.memo(() => {
       <h3 className='text-white'>Definitions</h3>
       <p>For the purposes of this Privacy Policy:</p>
       <ul>
-        <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
-        <li><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party.</li>
-        <li><strong>Application</strong> refers to FlipIQ, the software program provided by the Company.</li>
-        <li><strong>Company</strong> refers to FlipIQ (also “We”, “Us” or “Our”).</li>
-        <li><strong>Country</strong> refers to: Kenya</li>
-        <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a tablet.</li>
-        <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
-        <li><strong>Service</strong> refers to the Application.</li>
-        <li><strong>Service Provider</strong> means any person who processes the data on behalf of the Company.</li>
-        <li><strong>Third-party Social Media Service</strong> refers to any platform through which a User can log in to use the Service.</li>
-        <li><strong>Usage Data</strong> refers to data collected automatically when using the Service.</li>
-        <li><strong>You</strong> means the individual accessing the Service, or a legal entity on behalf of which such individual is using the Service.</li>
+        <li><b>Account</b> means a unique account created for You to access our Service or parts of our Service.</li>
+        <li><b>Affiliate</b> means an entity that controls, is controlled by or is under common control with a party.</li>
+        <li><b>Application</b> refers to FlipIQ, the software program provided by the Company.</li>
+        <li><b>Company</b> refers to FlipIQ (also “We”, “Us” or “Our”).</li>
+        <li><b>Country</b> refers to: Kenya</li>
+        <li><b>Device</b> means any device that can access the Service such as a computer, a cellphone or a tablet.</li>
+        <li><b>Personal Data</b> is any information that relates to an identified or identifiable individual.</li>
+        <li><b>Service</b> refers to the Application.</li>
+        <li><b>Service Provider</b> means any person who processes the data on behalf of the Company.</li>
+        <li><b>Third-party Social Media Service</b> refers to any platform through which a User can log in to use the Service.</li>
+        <li><b>Usage Data</b> refers to data collected automatically when using the Service.</li>
+        <li><b>You</b> means the individual accessing the Service, or a legal entity on behalf of which such individual is using the Service.</li>
       </ul>
 
       <h2 className='text-white'>Collecting and Using Your Personal Data</h2>

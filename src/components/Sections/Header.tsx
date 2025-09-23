@@ -61,7 +61,7 @@ const DesktopNav: FC<{ navSections: NavLink[]; currentSection: string | null }> 
               {navSections.map(({label, href}) => (
                   <NavItem
                     activeClass={activeClass}
-                    current={href === `#${currentSection}`}
+                    current={href.substring(1) === `${currentSection}`}
                     href={href}
                     inactiveClass={inactiveClass} 
                     key={label}
