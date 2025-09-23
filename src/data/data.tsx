@@ -106,45 +106,58 @@ export const aboutData: About = {
 export const skills: SkillGroup[] = [
 
   {
-    name: 'Frontend development',
+    name: 'Expert In',
     skills: [
       {
         name: 'Flutter',
+        image: 'images/skills/flutter.jpg',
         level: 9,
       },
       {
         name: 'Dart',
+        image:'images/skills/dart.jpg',
         level: 8,
       },
       {
+        name: 'ReactJS',
+        image:'images/skills/react.jpg',
+        level: 6,
+      },
+      {
         name: 'Javascript',
+        image:'images/skills/js.jpg',
         level: 7,
       },
       {
-        name: 'ReactJS',
-        level: 6,
+        name: 'Typescript',
+        image:'images/skills/ts.jpg',
+        level: 4,
       },
 
       {
-        name: 'SwiftUI',
-        level: 4,
+        name: 'Firebase',
+        image:'images/skills/firebase.jpg',
+        level: 5,
       },
 
     ],
   },
   {
-    name: 'Experience in Backend development',
+    name: 'Experience in',
     skills: [
       {
         name: 'Node.js',
+        image:'images/skills/nodejs.jpg',
         level: 7,
       },
       {
-        name: 'Firebase',
-        level: 5,
+        name: 'SwiftUI',
+        image:'images/skills/swiftui.jpg',
+        level: 4,
       },
       {
         name: 'Python',
+        image:'images/skills/python.jpg',
         level: 5,
       },
     ],

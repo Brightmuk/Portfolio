@@ -65,7 +65,7 @@ export interface Stat {
 export interface Skill {
   name: string;
   level: number;
-  max?: number;
+  image: string;
 }
 
 export interface SkillGroup {
