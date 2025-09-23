@@ -1,4 +1,4 @@
-import {FC, memo, PropsWithChildren, useMemo} from 'react';
+import {FC, memo, PropsWithChildren} from 'react';
 
 import {Skill as SkillType, SkillGroup as SkillGroupType} from '../../../data/dataDef';
 

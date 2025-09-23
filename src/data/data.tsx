@@ -133,6 +133,11 @@ export const skills: SkillGroup[] = [
         image:'images/skills/ts.jpg',
         level: 4,
       },
+      {
+        name: 'Git',
+        image:'images/skills/git.jpg',
+        level: 5,
+      },
 
       {
         name: 'Firebase',
@@ -158,6 +163,11 @@ export const skills: SkillGroup[] = [
       {
         name: 'Python',
         image:'images/skills/python.jpg',
+        level: 5,
+      },
+      {
+        name: 'Figma',
+        image:'images/skills/figma.jpg',
         level: 5,
       },
     ],
