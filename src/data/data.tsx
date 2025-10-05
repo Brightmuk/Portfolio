@@ -106,7 +106,7 @@ export const aboutData: About = {
 export const skills: SkillGroup[] = [
 
   {
-    name: 'Expert In',
+    name: 'Proficient In',
     skills: [
       {
         name: 'Flutter',
