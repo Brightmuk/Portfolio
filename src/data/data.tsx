@@ -250,13 +250,24 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'SEPT 2024 - Present',
+    date: 'NOV 2025 - Present',
+    location: 'Selstan',
+    title: 'UI UX Developer',
+    content: (
+      <p>
+       Designing and building secure, cross-platform user interfaces for web dashboards and desktop applications, with a focus on usability, performance, and consistency across macOS and other platforms.
+      </p>
+    ),
+  },
+    {
+    date: 'SEPT 2024 - NOV 2025',
     location: 'InterIntel Technologies',
     title: 'Lead Flutter Engineer',
     content: (
-      <p>
-        Developing UI and Ux of the core applications
-      </p>
+     <ul>
+      <li>- Develop Nenacall, a Webrtc calling application for customer service agents</li>
+      <li>- Collaborate with the Dev and Design team to implement a reusable server driven user interface in Flutter</li>
+     </ul>
     ),
   },
   {
@@ -329,7 +340,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.LinkedIn,
-      text: 'Bright',
+      text: 'Bright Mukonesi',
       href: 'https://www.linkedin.com/in/brightmukonesi',
     },
     {

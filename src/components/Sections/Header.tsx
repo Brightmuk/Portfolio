@@ -22,7 +22,7 @@ const Header: FC = memo(() => {
     {label: 'Resume', href: '#resume'},
     {label: 'Projects', href: '#project'},
     {label: 'Contact', href: '#contact'},
-    {label: 'Privacy Policy', href: '/privacy'},  
+    // {label: 'Privacy Policy', href: '/privacy'},  
   ],
   []
 );
