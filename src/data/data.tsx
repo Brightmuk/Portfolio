@@ -9,6 +9,7 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+import TikTokIcon from '../components/Icon/TikTokIcon';
 import {
   About,
   ContactSection,
@@ -21,6 +22,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+
 
 /**
  * Page meta data
@@ -86,12 +88,11 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: '/images/profilepic.png',
-  description: `My journey in software development began at Moringa School, 
-  where I gained a strong foundation in full-stack development. 
-  Over the years, I have honed my skills in UI/UX and frontend development using 
-  technologies such as Flutter for cross-platform development JavaScript and ReactJS. 
-  I have also worked extensively with NoSQL and SQL databases and APIs, ensuring seamless integration
-   and data management in the applications I build.`,
+  description: `Specializing in the intersection of mobile performance and intuitive design, 
+  I engineer applications using Flutter, SwiftUI, and Kotlin. My background in full-stack development
+   allows me to bridge the gap between complex frontend interfaces and robust backend systems. From
+    optimizing bundle sizes to implementing seamless API and database integrations (SQL/NoSQL), 
+    I focus on building software that is as technically sound as it is user-centric.`,
   aboutItems: [
     {label: 'Location', text: 'Nairobi, Kenya', Icon: MapIcon},
     {label: 'Nationality', text: 'Kenyan', Icon: FlagIcon},
@@ -151,19 +152,25 @@ export const skills: SkillGroup[] = [
     name: 'Experience in',
     skills: [
       {
-        name: 'Node.js',
-        image:'images/skills/nodejs.jpg',
-        level: 7,
-      },
-      {
         name: 'SwiftUI',
         image:'images/skills/swiftui.jpg',
         level: 4,
       },
       {
+        name: 'Kotlin',
+        image:'images/skills/kotlin.jpg',
+        level: 4,
+      },
+      
+      {
         name: 'Python',
         image:'images/skills/python.jpg',
         level: 5,
+      },
+      {
+        name: 'Node.js',
+        image:'images/skills/nodejs.jpg',
+        level: 7,
       },
       {
         name: 'SQL',
@@ -184,11 +191,23 @@ export const skills: SkillGroup[] = [
  * Project section
  */
 export const projectItems: ProjectItem[] = [
+      {
+    title: 'M-Ficha Messenger',
+    description: 'M-Ficha is a modern SMS messenger with the added benefit of real-time financial privacy',
+    url: 'https://play.google.com/store/apps/details?id=com.brimukon.messaging&hl=en',
+    image: '/images/project/project-6.jpg',
+  },
   {
     title: 'FlipIQ',
     description: 'The ultimate flashcards memorization app built with AI-powered learning',
-    url: 'https://play.google.com/store/apps/details?id=com.bright.flashcards',
+    url: 'https://play.google.com/store/apps/details?id=com.brimukon.flipiq&hl=en',
     image: '/images/project/project-1.jpg',
+  },
+    {
+    title: 'Expenditure buddy',
+    description: 'Calculate your planned expenditure at ease',
+    url: 'https://play.google.com/store/apps/details?id=com.brimukon.spenditize&hl=en',
+    image: '/images/project/project-3.jpg',
   },
   {
     title: 'KCA Timetables',
@@ -196,12 +215,8 @@ export const projectItems: ProjectItem[] = [
     url: 'https://play.google.com/store/apps/details?id=com.brightdesigns.kcatimetables',
     image: '/images/project/project-2.jpg',
   },
-  {
-    title: 'Expenditure buddy',
-    description: 'Calculate your planned expenditure at ease',
-    url: 'https://reactresume.com',
-    image: '/images/project/project-3.jpg',
-  },
+
+
   {
     title: 'SakaHapa',
     description: 'Where buyers saveand sellers sell more',
@@ -214,18 +229,13 @@ export const projectItems: ProjectItem[] = [
     url: 'https://wecanrush.com/',
     image: '/images/project/project-5.jpg',
   },
-  {
-    title: 'Coming soon',
-    description: 'Something amazing is under construction',
-    url: 'https://brightmuk.com',
-    image: '/images/project/project-6.jpg',
-  },
-  {
-    title: 'Coming soon',
-    description: 'Something beautiful is in creation',
-    url: 'https://brightmuk.com',
-    image: '/images/project/project-7.jpg',
-  },
+
+  // {
+  //   title: 'Coming soon',
+  //   description: 'Something beautiful is in creation',
+  //   url: 'https://brightmuk.com',
+  //   image: '/images/project/project-7.jpg',
+  // },
 
 
 ];
@@ -252,11 +262,12 @@ export const experience: TimelineItem[] = [
   {
     date: 'NOV 2025 - Present',
     location: 'Selstan',
-    title: 'UI UX Developer',
+    title: 'Application Developer',
     content: (
-      <p>
-       Designing and building secure, cross-platform user interfaces for web dashboards and desktop applications, with a focus on usability, performance, and consistency across macOS and other platforms.
-      </p>
+      <ul>
+        <li>- Spearheaded the development of a native macOS application, leveraging platform-specific APIs to ensure seamless integration with the desktop environment.</li>
+        <li>- Engineered high-performance Flutter web applications, achieving a 30% improvement in load times through efficient state management and asset optimization.</li>
+      </ul>
     ),
   },
     {
@@ -358,6 +369,7 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Brightmuk'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/12264865/bright'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/brightmukonesi'},
+  {label: 'Tiktok', Icon: TikTokIcon, href: 'https://www.tiktok.com/@brightthedev'},
  
   
 ];
